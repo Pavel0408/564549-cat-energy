@@ -12,9 +12,13 @@
   <header class="main-header">
     <div class="main-header__logo energy-logo">
       <img class="energy-logo__img" src="#" alt="Cat Energy">
-      <h2 class="energy-logo__title"><span class="energy-logo__bold">Cat </span>Energy</h2>
+      <h2 class="energy-logo__title">
+        <span class="energy-logo__bold">Cat </span>Energy
+      </h2>
     </div>
-    <button class="main-header__menu-close"><span class="visually-hidden">Закрыть меню</span></button>
+    <button class="main-header__menu-close">
+      <span class="visually-hidden">Закрыть меню</span>
+    </button>
     <nav>
       <ul class="main-header__nav site-nav">
         <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
@@ -24,7 +28,8 @@
     </nav>
   </header>
   <main class="form-main">
-    <h1 class="form-main__title">Подбор программы</h1>
+    <h1 class="form-main__title">Подбор программы
+    </h1>
     <section class="program-selection">
       <span class="program-selection__description">Заполните анкету и мы подберем программу питания для вашего кота</span>
       <form class="data-collection" action="https://echo.htmlacademy.ru" method="post">
@@ -32,33 +37,41 @@
           <legend class="visually-hidden">Информация о коте</legend>
           <p>
             <label class="cat-info__label" for="Cat-name">Имя:*</label>
-            <input class="cat-info__input" type="text" name="Cat-name" id="Cat-name" placeholder="Барсик" required></p>
+            <input class="cat-info__input" type="text" name="Cat-name" id="Cat-name" placeholder="Барсик" required>
+          </p>
           <p>
             <label class="cat-info__label" for="Cat-weight">Вес (кг):*</label>
-            <input class="cat-info__input" type="text" name="Cat-weight" id="Cat-weight" placeholder="7" required></p>
+            <input class="cat-info__input" type="text" name="Cat-weight" id="Cat-weight" placeholder="7" required>
+          </p>
           <p>
             <label class="cat-info__label" for="Cat-age">Возраст (лет):</label>
-            <input class="cat-info__input" type="text" name="Cat-age" id="Cat-age" placeholder="7"></p>
+            <input class="cat-info__input" type="text" name="Cat-age" id="Cat-age" placeholder="7">
+          </p>
           <div class="cat-info__radio">
             <p>
               <input class="cat-info__radio-input" type="radio" name="purpose" id="lose-weight" value="lose-weight" checked>
-              <label class="cat-info__radio-label" for="lose-weight">Похудение</label></p>
+              <label class="cat-info__radio-label" for="lose-weight">Похудение</label>
+            </p>
             <p>
               <input class="cat-info__radio-input" type="radio" name="purpose" id="weight-gain" value="weight-gain">
-              <label class="cat-info__radio-label" for="weight-gain">Набор массы</label></p>
+              <label class="cat-info__radio-label" for="weight-gain">Набор массы</label>
+            </p>
             <p>
               <input class="cat-info__radio-input" type="radio" name="purpose" id="advice" value="advice">
-              <label class="cat-info__radio-label" for="advice">Не знаю (Нужен ваш совет)</label></p>
+              <label class="cat-info__radio-label" for="advice">Не знаю (Нужен ваш совет)</label>
+            </p>
           </div>
         </fieldset>
         <fieldset class="cat-info">
           <legend class="cat-info__title">Контактные данные (владельца кота)</legend>
           <p>
             <label class="cat-info__label" for="email">E-mail:*</label>
-            <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required></p>
+            <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+          </p>
           <p>
             <label class="cat-info__label" for="phone">Телефон:*</label>
-            <input type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required></p>
+            <input type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+          </p>
         </fieldset>
         <fieldset class="comment">
           <legend class="comment__title">Комментарий</legend>
@@ -68,42 +81,55 @@
           <legend class="other-info__title">Дополнительно</legend>
           <p>
             <input class="other-info__check" type="checkbox" name="sweetener" id="sweetener" checked>
-            <label class="other-info__label" for="sweetener">Сахарозаменитель</label></p>
+            <label class="other-info__label" for="sweetener">Сахарозаменитель</label>
+          </p>
           <p>
             <input class="other-info__check" type="checkbox" name="water" id="water">
-            <label class="other-info__label" for="water">Питьевая вода</label></p>
+            <label class="other-info__label" for="water">Питьевая вода</label>
+          </p>
           <p>
             <input class="other-info__check" type="checkbox" name="smilk" id="milk">
-            <label class="other-info__label" for="milk">Молоко</label></p>
+            <label class="other-info__label" for="milk">Молоко</label>
+          </p>
           <p>
             <input class="other-info__check" type="checkbox" name="vitamins" id="vitamins">
-            <label class="other-info__label" for="vitamins">Витамины</label></p>
+            <label class="other-info__label" for="vitamins">Витамины</label>
+          </p>
         </fieldset>
         <button class="data-collection__submit button" type="submit">Отправить заявку</button>
       </form>
       <span class="program-selection__footnote">* — Обязательные поля</span>
     </section>
     <section class="contacts">
-      <h2 class="visually-hidden">Адрес и контакты</h2>
-      <span class="contacts__slogan">приглашаем к сотрудничеству дилеров!</span>
-      <span class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
-      <img class="contacts__map" src="#" alt="Карта">
+        <h2 class="visually-hidden">Адрес и контакты
+        </h2>
+        <span class="contacts__slogan">приглашаем к сотрудничеству дилеров!</span>
+        <span class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+        <img class="contacts__map" src="#" alt="Карта">
+      </section>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__logo energy-logo">
-      <h2 class="energy-logo__title"><span class="energy-logo__bold">Cat </span>Energy</h2>
+      <h2 class="energy-logo__title">
+        <span class="energy-logo__bold">Cat </span>Energy
+      </h2>
     </div>
     <section>
-      <h3 class="visually-hidden">Мы в социальных сетях</h3>
+      <h3 class="visually-hidden">Мы в социальных сетях
+      </h3>
       <ul class="main-footer__social social-list">
-        <li class="social-list__item"><a class="social-list__vk" href="#">Вконтакте</a></li>
-        <li class="social-list__item"><a class="social-list__inst" href="#">Инстаграм</a></li>
-        <li class="social-list__item"><a class="social-list__fb" href="#">Фэйсбук</a></li>
+        <li class="social-list__item">
+          <a class="social-list__vk" href="#">Вконтакте</a></li>
+        <li class="social-list__item">
+          <a class="social-list__inst" href="#">Инстаграм</a></li>
+        <li class="social-list__item">
+          <a class="social-list__fb" href="#">Фэйсбук</a></li>
       </ul>
     </section>
     <section class="main-footer__copyright Academy">
-      <h3 class="visually-hidden">Правообладатели</h3>
+      <h3 class="visually-hidden">Правообладатели
+      </h3>
       <a class="Academy__link" href="#">HTML Academy</a>
       <div class="Academy__logo-block">
         <img class="Academy__logo" src="#" alt="Логотип HTML Academy">
