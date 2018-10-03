@@ -1,0 +1,23 @@
+.energy-logo {
+  display: flex;
+  align-items: flex-start;
+}
+
+.energy-logo__img {
+  margin-right: auto;
+}
+
+.energy-logo__title {
+  font-family: $main-font;
+  color: $font-color;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.energy-logo__bold {
+  font-weight: bold;
+}
+
+.energy-logo__menu-close {
+  margin-left: auto;
+}
