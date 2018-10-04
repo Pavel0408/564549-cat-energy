@@ -1,4 +1,5 @@
 .contacts {
+  background-color: #ffffff;
   font-family: $main-font;
   color: $font-color;
   padding: 0;
@@ -30,5 +31,6 @@
 
 .contacts__map {
   width: 100%;
+  margin-top: 24px;
 }
 

@@ -1,0 +1,39 @@
+.additional-catalog {
+  font-family: $main-font;
+  color: $font-color;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.additional-catalog__title {
+  @include reset();
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.additional-catalog__list {
+  @include reset();
+  width: 100%;
+}
+
+.additional-catalog__slogan {
+  width: 100%;
+  min-height: 289px;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+}
+
+.additional-catalog__text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: auto;
+  width: 163px;
+  margin-bottom: 42px;
+  text-align: center;
+}
