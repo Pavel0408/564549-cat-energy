@@ -12,6 +12,7 @@
 }
 
 .showcase-description__title {
+  @include reset();
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -21,13 +22,13 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  color: #444444;
 }
 
 .showcase-description__link {
   margin-right: auto;
   text-decoration: none;
   text-transform: uppercase;
-  color: $font-color;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
