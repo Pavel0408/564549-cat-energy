@@ -1,0 +1,21 @@
+.Academy {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.Academy__link {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #444444;
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.Academy__logo-block {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}

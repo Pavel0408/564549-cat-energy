@@ -1,0 +1,8 @@
+.social-list {
+  @include reset();
+  padding-top: 24px;
+  padding-bottom: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

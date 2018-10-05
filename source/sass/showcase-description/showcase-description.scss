@@ -1,0 +1,35 @@
+.showcase-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding-top: 37px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-bottom: 19px;
+  font-family: $main-font;
+  color: $font-color;
+}
+
+.showcase-description__title {
+  @include reset();
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+}
+
+.showcase-description__info {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.showcase-description__link {
+  margin-right: auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}

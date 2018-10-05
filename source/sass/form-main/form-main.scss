@@ -1,0 +1,14 @@
+.form-main {
+  font-family: $main-font;
+  color: $font-color;
+  padding-top: 20px;
+}
+
+.form-main__title {
+  @include reset();
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: 30px;
+}

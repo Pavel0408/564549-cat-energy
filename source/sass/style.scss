@@ -1,0 +1,72 @@
+$main-font: "Oswald", "arial", serif;
+$font-color: #111111;
+$green-bg: #65a93c;
+$grey-bg: #f2f2f2;
+
+body {
+  font-family: $main-font;
+  color: $font-color;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+a {
+  font-family: $main-font;
+  color: $font-color;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@import "container/container.scss";
+@import "visually-hidden/visually-hidden.scss";
+@import "reset/reset.scss";
+@import "button/button.scss";
+@import "main-header/main-header.scss";
+@import "energy-logo/energy-logo.scss";
+@import "site-nav/site-nav.scss";
+@import "showcase/showcase.scss";
+@import "intro/intro.scss";
+@import "showcase-description/showcase-description.scss";
+@import "example/example.scss";
+@import "advantages/advanteges.scss";
+@import "living-example/living-example.scss";
+@import "display-none/display-none.scss";
+@import "goods/goods.scss";
+@import "additional-catalog/additional-catalog.scss";
+@import "form-main/form-main.scss";
+@import "program-selection/programm-selection.scss";
+@import "data-collection/data-collection.scss";
+@import "cat-info/cat-info.scss";
+@import "comment/comment.scss";
+@import "other-info/other-info.scss";
+@import "contacts/contacts.scss";
+@import "main-footer/main-footer.scss";
+@import "social-list/social-list.scss";
+@import "Academy/Academy.scss";
+@import "catalog-main/catalog-main.scss"

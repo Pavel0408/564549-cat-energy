@@ -1,0 +1,11 @@
+.main-header {
+  font-family: $main-font;
+  color: $font-color;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 11px;
+}
+
+.main-header__logo {
+  min-height: 65px;
+}
