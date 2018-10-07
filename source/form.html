@@ -31,9 +31,9 @@
       </ul>
     </nav>
   </header>
-  <main class="form-main container">
+  <main class="form-main">
     <h1 class="form-main__title">Подбор программы</h1>
-    <section class="program-selection">
+    <section class="program-selection container">
       <span class="program-selection__description">Заполните анкету и мы подберем программу питания для вашего кота</span>
       <form class="data-collection" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="data-collection__cat cat-info">
@@ -103,39 +103,40 @@
       </form>
       <span class="program-selection__footnote">* — Обязательные поля</span>
     </section>
-    </main>
-    <footer class="main-footer">
-        <section class="contacts container">
-            <h2 class="visually-hidden">Адрес и контакты</h2>
-            <span class="contacts__slogan">приглашаем к сотрудничеству дилеров!</span>
-            <span class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
-            <img class="contacts__map" src="img/bg-map-mobile@1x.png" alt="Карта">
-          </section>
-        <div class="main-footer__logo energy-logo container">
-          <img src="img/logo-footer.svg" alt="Cat Energy" width="130" height="27">
+    <section class="contacts container">
+        <h2 class="visually-hidden">Адрес и контакты</h2>
+        <span class="contacts__slogan">приглашаем к сотрудничеству дилеров!</span>
+        <span class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8 <br>Санкт-Петербург</span>
+        <div class="contacts__map-wrapper">
+          <img class="contacts__map" src="img/bg-map-mobile@1x.png" alt="Карта">
         </div>
-        <section class="main-footer__social container">
-          <h3 class="visually-hidden">Мы в социальных сетях</h3>
-          <ul class="main-footer__social social-list">
-            <li class="social-list__item">
-              <a class="social-list__vk" href="#">Вконтакте</a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__inst" href="#">Инстаграм</a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__fb" href="#">Фэйсбук</a>
-            </li>
-          </ul>
-        </section>
-        <section class="main-footer__copyright Academy container">
-          <h3 class="visually-hidden">Правообладатели</h3>
-          <a class="Academy__link" href="#">HTML Academy</a>
-          <div class="Academy__logo-block">
-            <img class="Academy__logo" src="#" alt="Логотип HTML Academy">
-          </div>
-        </section>
-      </footer>
-</body>
+      </section>
+  </main>
+  <footer class="main-footer container">
+    <div class="main-footer__logo energy-logo">
+      <img src="img/logo-footer.svg" alt="Cat Energy" width="130" height="27">
+    </div>
+    <section>
+      <h3 class="visually-hidden">Мы в социальных сетях</h3>
+      <ul class="main-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__vk" href="#">Вконтакте</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__inst" href="#">Инстаграм</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__fb" href="#">Фэйсбук</a>
+        </li>
+      </ul>
+    </section>
+    <section class="main-footer__copyright Academy">
+      <h3 class="visually-hidden">Правообладатели</h3>
+      <a class="Academy__link" href="#">HTML Academy</a>
+      <div class="Academy__logo-block">
+        <img class="Academy__logo" src="#" alt="Логотип HTML Academy">
+      </div>
+    </section>
+  </footer>
 
 </html>

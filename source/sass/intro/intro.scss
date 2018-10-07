@@ -23,10 +23,38 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  padding-bottom: 164px;
+  margin-bottom: 164px;
 }
 
 .intro__button {
   margin-top: 135px;
   margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    align-items: flex-start;
+    padding-left: 90px;
+    background: url("../img/index-can-tablet@1x.jpg") 0 190px no-repeat;
+  }
+
+  .intro__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: $font-color;
+    width: 420px;
+  }
+
+  .intro__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: $font-color;
+    margin-bottom: 49px;
+  }
+
+  .intro__button {
+    margin: 0;
+    margin-bottom: 529px;
+    width: 246px;
+  }
 }
