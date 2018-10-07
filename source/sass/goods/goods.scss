@@ -14,7 +14,7 @@
   width: 50%;
 }
 
-.goods__title {
+*[class*="goods__title"] {
   @include reset();
   font-size: 16px;
   line-height: 20px;
@@ -32,4 +32,26 @@
 
 .goods__button {
   margin-top: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .goods__img-block {
+    width: 100%;
+  }
+
+  .goods__info-block {
+    width: 100%;
+  }
+
+  *[class*="goods__title"] {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .goods__title--main {
+    width: 126px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }

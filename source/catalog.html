@@ -32,7 +32,7 @@
     </nav>
   </header>
   <main class="catalog-main">
-    <h1 class="catalog-main__title">Каталог продукции</h1>
+    <h1 class="catalog-main__title container">Каталог продукции</h1>
     <section class="catalog-main main-catalog container">
       <h2 class="visually-hidden">Католог основной продукции</h2>
       <ul class="main-catatlog__list">
@@ -41,7 +41,7 @@
             <img class="goods__img" src="#" alt="Cat Energy">
           </div>
           <div class="goods__info-block">
-              <h3 class="goods__title">Cat Energy PRO 500 г</h3>
+              <h3 class="goods__title--main">Cat Energy PRO 500 г</h3>
           <table class="goods__table">
             <tr>
               <td class="goods__characteristic">Объём</td>
@@ -64,7 +64,7 @@
             <img class="goods__img" src="#" alt="Cat Energy">
           </div>
           <div class="goods__info-block">
-          <h3 class="goods__title">Cat Energy PRO 1000 г</h3>
+          <h3 class="goods__title--main">Cat Energy PRO 1000 г</h3>
           <table class="goods__table">
             <tr>
               <td class="goods__characteristic">Объём</td>
@@ -86,7 +86,7 @@
           <div class="goods__img-block"><img class="goods__img" src="#" alt="Cat Energy">
           </div>
           <div class="goods__info-block">
-          <h3 class="goods__title">Cat Energy PRO 500 г</h3>
+          <h3 class="goods__title--main">Cat Energy PRO 500 г</h3>
           <table class="goods__table">
             <tr>
               <td class="goods__characteristic">Объём</td>
@@ -108,7 +108,7 @@
           <div class="goods__img-block"><img class="goods__img" src="#" alt="Cat Energy">
           </div>
           <div class="goods__info-block">
-          <h3 class="goods__title">Cat Energy PRO 1000 г</h3>
+          <h3 class="goods__title--main">Cat Energy PRO 1000 г</h3>
           <table class="goods__table">
             <tr>
               <td class="goods__characteristic">Объём</td>
@@ -130,7 +130,7 @@
           <div class="goods__img-block"><img class="goods__img" src="#" alt="Cat Energy">
           </div>
           <div class="goods__info-block">
-          <h3 class="goods__title">Cat Energy Slim 500 г</h3>
+          <h3 class="goods__title--main">Cat Energy Slim 500 г</h3>
           <table class="goods__table">
             <tr>
               <td class="goods__characteristic">Объём</td>
@@ -152,7 +152,7 @@
           <div class="goods__img-block"><img class="goods__img" src="#" alt="Cat Energy">
           </div>
           <div class="goods__info-block">
-          <h3 class="goods__title">Cat Energy Slim 500 г</h3>
+          <h3 class="goods__title--main">Cat Energy Slim 500 г</h3>
           <table class="goods__table">
             <tr>
               <td class="goods__characteristic">Объём</td>
@@ -174,7 +174,7 @@
           <div class="goods__img-block"><img class="main-catalog__img" src="#" alt="Cat Energy">
           </div>
           <div class="goods__info-block">
-          <h3 class="goods__title">Cat Energy Slim 500 г</h3>
+          <h3 class="goods__title--main">Cat Energy Slim 500 г</h3>
           <table class="goods__table">
             <tr>
               <td class="goods__characteristic">Объём</td>
@@ -192,52 +192,61 @@
           </div>
           <a class="goods__button button" href="#">Заказать</a>
         </li>
+        <li class="main-catalog__item goods">
+          <span class="main-catatlog__slogan">Показать еще 100500 товаров</span>
+          <span class="main-catatlog__more">На самом деле вкусов гораздо больше!</span>
+          <a class="main-catalog__button--more button" href="#">Показать все</a></li>
       </ul>
-      <span class="main-catatlog__slogan">Показать еще 100500 товаров</span>
-      <span class="main-catatlog__more">На самом деле вкусов гораздо больше!</span>
-      <a class="main-catalog__button--more button" href="#">Показать все</a>
     </section>
     <section class="additional-catalog container">
       <h2 class="additional-catalog__title">Дополнительные товары</h2>
       <ul class="additional-catalog__list">
         <li class="additional-catalog__item goods">
+          <div class="additional-catalog__info-block">
           <h3 class="goods__title">Сахарозаменитель</h3>
-          <table class="goods__table">
+          <table class="goods__table additional-catalog__table">
             <tr>
               <td class="goods__characteristic">1 упаковка (100 г)</td>
               <td>100 Р.</td>
             </tr>
           </table>
+          </div>
           <a class="goods__button button" href="#">Заказать</a>
         </li>
-        <li class="goods">
+        <li class="additional-catalog__item goods">
+          <div class="additional-catalog__info-block">
           <h3 class="goods__title">Питьевая вода</h3>
-          <table class="goods__table">
+          <table class="goods__table additional-catalog__table">
             <tr>
               <td class="goods__characteristic">5 литров</td>
               <td class="goods__data">50 Р.</td>
             </tr>
           </table>
+          </div>
           <a class="goods__button button" href="#">Заказать</a>
         </li>
-        <li  class="goods">
+        <li  class="additional-catalog__item goods">
+          <div class="additional-catalog__info-block">
           <h3 class="goods__title">Молоко</h3>
-          <table class="goods__table">
+          <table class="goods__table additional-catalog__table">
             <tr>
               <td class="goods__characteristic">1 литр</td>
               <td class="goods__data">100 Р.</td>
             </tr>
           </table>
+          </div>
           <a class="goods__button button" href="#">Заказать</a>
         </li>
-        <li  class="goods">
+        <li  class="additional-catalog__item goods">
+          <div class="additional-catalog__info-block">
           <h3 class="goods__title">Витамины</h3>
-          <table class="goods__table">
+          <table class="goods__table additional-catalog__table">
             <tr>
               <td class="goods__characteristic">1 упаковка (30 г)</td>
               <td class="goods__data">300 Р.</td>
             </tr>
           </table>
+          </div>
           <a class="goods__button button" href="#">Заказать</a>
         </li>
       </ul>

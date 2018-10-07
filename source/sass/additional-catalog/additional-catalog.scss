@@ -24,6 +24,7 @@
   display: flex;
   justify-content: center;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
 }
 
 .additional-catalog__text {
@@ -36,4 +37,44 @@
   width: 163px;
   margin-bottom: 42px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-catalog {
+    align-items: stretch;
+  }
+
+  .additional-catalog__list {
+    padding-left: 37px;
+    padding-right: 36px;
+  }
+
+  .additional-catalog__info-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    outline: 2px solid blue;
+  }
+
+  .additional-catalog__item {
+    width: 638px;
+  }
+
+  .additional-catalog__table {
+    width: 40%;
+    margin-left: auto;
+  }
+
+  .additional-catalog__slogan {
+    min-height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .additional-catalog__text {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 124px;
+    text-align: left;
+  }
 }
