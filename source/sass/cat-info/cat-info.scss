@@ -1,8 +1,26 @@
-.cat-info-label {
+.cat-info__wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.cat-info__input {
+  flex-grow: 1;
+  min-height: 43px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 13px;
+  padding-bottom: 14px;
+}
+
+.cat-info__label {
+  white-space: nowrap;
   font-family: $main-font;
   color: #222222;
   font-size: 16px;
   line-height: 18px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 15px;
 }
 
 .cat-info__radio-label {
