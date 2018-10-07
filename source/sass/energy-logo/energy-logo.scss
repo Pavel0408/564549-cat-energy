@@ -15,3 +15,9 @@
 .energy-logo__menu-close {
   margin-left: auto;
 }
+
+@media (min-width: $tablet-width) {
+  .energy-logo__menu-close {
+    display: none;
+  }
+}

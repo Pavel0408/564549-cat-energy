@@ -2,8 +2,10 @@
   @include reset();
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   text-transform: uppercase;
+  outline: 1px solid blue;
 }
 
 .site-nav__item {
@@ -12,6 +14,7 @@
   justify-content: center;
   min-height: 65px;
   text-align: center;
+  outline: 1px solid yellow;
 }
 
 .site-nav__link {
@@ -22,4 +25,21 @@
   line-height: 20px;
   font-weight: 500;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-nav {
+    flex-direction: row;
+  }
+
+  .site-nav__item {
+    margin-left: 39px;
+    justify-content: flex-start;
+    min-height: auto;
+  }
+
+  .site-nav__link {
+    margin-left: 0;
+    font-size: 18px;
+  }
 }
