@@ -58,3 +58,11 @@
     width: 246px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .intro__button {
+    margin: 0;
+    margin-bottom: 269px;
+    width: 246px;
+  }
+}

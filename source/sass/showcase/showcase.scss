@@ -7,3 +7,16 @@
 .showcase__item {
   margin-bottom: 20px;
 }
+
+@media (min-width: $desktop-width) {
+  .showcase__items__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .showcase__item {
+    width: 570px;
+    outline: 1px solid blue;
+    margin-right: 80px;
+  }
+}

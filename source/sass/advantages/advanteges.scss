@@ -24,3 +24,11 @@
     margin-right: 75px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages__item {
+    width: 245px;
+    outline: 1px solid green;
+    margin: 0;
+  }
+}
