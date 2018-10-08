@@ -78,3 +78,40 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additional-catalog {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .additional-catalog__title {
+    width: 100%;
+  }
+
+  .additional-catalog__list {
+    padding-left: 0;
+    padding-right: 0;
+    width: 895px;
+  }
+
+  .additional-catalog__table {
+    width: auto;
+  }
+
+  .additional-catalog__button {
+    width: 245px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .additional-catalog__item {
+    width: 895px;
+    flex-wrap: nowrap;
+  }
+
+  .additional-catalog__slogan {
+    width: 245px;
+    margin-left: auto;
+  }
+}

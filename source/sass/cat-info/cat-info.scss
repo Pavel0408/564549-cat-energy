@@ -37,4 +37,22 @@
   font-weight: 400;
 }
 
+@media (min-width: $desktop-width) {
+  .cat-info__cat-group {
+    display: flex;
+    width: 100%;
+  }
 
+  .cat-info__cat-block {
+    width: 40%;
+  }
+
+  .cat-info__radio {
+    width: 40%;
+    margin-left: 80px;
+  }
+
+  .cat-info__owner-block {
+    display: flex;
+  }
+}

@@ -12,3 +12,10 @@
   line-height: 60px;
   font-weight: 400;
 }
+
+@media (min-width: $desktop-width) {
+  .catalog-main {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}

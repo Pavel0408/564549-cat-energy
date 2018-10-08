@@ -39,6 +39,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     outline: 5px solid fuchsia;
+    width: 100%;
   }
 
   .main-catalog__item {
@@ -46,5 +47,13 @@
     padding-left: 38px;
     padding-right: 38px;
     outline: 1px solid blue;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catatlog__item {
+    width: 245px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }

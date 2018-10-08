@@ -10,3 +10,14 @@
 .data-collection fieldset {
   border: none;
 }
+
+@media (min-width: $desktop-width) {
+  // .data-collection {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
+
+  .data-collection__submit {
+    width: 570px;
+  }
+}
