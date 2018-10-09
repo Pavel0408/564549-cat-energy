@@ -33,3 +33,29 @@
   width: 100%;
   margin-top: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__map-wrapper {
+    width: 100%;
+    padding-bottom: 396px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-position: bottom 0 left 0;
+    background-clip: border-box;
+    margin-top: 50px;
+  }
+
+  .contacts__slogan {
+    padding-left: 70px;
+    width: 170px;
+  }
+
+  .contacts__address {
+    padding-right: 70px;
+    width: 50%;
+    text-align: right;
+  }
+
+  .contacts__map {
+    display: none;
+  }
+}

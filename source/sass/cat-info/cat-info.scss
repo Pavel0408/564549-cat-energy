@@ -1,8 +1,26 @@
-.cat-info-label {
+.cat-info__wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.cat-info__input {
+  flex-grow: 1;
+  min-height: 43px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  width: 50%;
+}
+
+.cat-info__label {
   font-family: $main-font;
   color: #222222;
   font-size: 16px;
   line-height: 18px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 15px;
 }
 
 .cat-info__radio-label {
@@ -17,4 +35,24 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+}
+
+@media (min-width: $desktop-width) {
+  .cat-info__cat-group {
+    display: flex;
+    width: 100%;
+  }
+
+  .cat-info__cat-block {
+    width: 40%;
+  }
+
+  .cat-info__radio {
+    width: 40%;
+    margin-left: 80px;
+  }
+
+  .cat-info__owner-block {
+    display: flex;
+  }
 }

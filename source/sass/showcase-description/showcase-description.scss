@@ -23,6 +23,7 @@
   line-height: 18px;
   font-weight: 400;
   color: #444444;
+  outline: 1px solid green;
 }
 
 .showcase-description__link {
@@ -32,4 +33,20 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .showcase-description {
+    align-items: flex-start;
+    padding-left: 52px;
+    padding-right: 285px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .showcase-description {
+    align-items: flex-start;
+    padding-left: 52px;
+    padding-right: 52px;
+  }
 }

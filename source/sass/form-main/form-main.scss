@@ -6,6 +6,8 @@
 
 .form-main__title {
   @include reset();
+  margin-left: auto;
+  margin-right: auto;
   font-size: 36px;
   line-height: 40px;
   text-align: left;

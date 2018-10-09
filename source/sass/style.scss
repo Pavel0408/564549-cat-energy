@@ -2,6 +2,8 @@ $main-font: "Oswald", "arial", serif;
 $font-color: #111111;
 $green-bg: #65a93c;
 $grey-bg: #f2f2f2;
+$tablet-width: 768px;
+$desktop-width: 1440px;
 
 body {
   font-family: $main-font;
@@ -43,9 +45,9 @@ html {
   box-sizing: inherit;
 }
 
+@import "reset/reset.scss";
 @import "container/container.scss";
 @import "visually-hidden/visually-hidden.scss";
-@import "reset/reset.scss";
 @import "button/button.scss";
 @import "main-header/main-header.scss";
 @import "energy-logo/energy-logo.scss";
@@ -58,6 +60,7 @@ html {
 @import "living-example/living-example.scss";
 @import "display-none/display-none.scss";
 @import "goods/goods.scss";
+@import "main-catalog/main-catalog.scss";
 @import "additional-catalog/additional-catalog.scss";
 @import "form-main/form-main.scss";
 @import "program-selection/programm-selection.scss";

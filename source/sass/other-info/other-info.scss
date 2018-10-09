@@ -11,3 +11,16 @@
   font-size: 16px;
   line-height: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .other-info__block {
+    display: flex;
+    flex-wrap: wrap;
+    outline: 1px solid blue;
+  }
+
+  .other-info__wrapper {
+    width: 50%;
+    outline: 1px solid yellow;
+  }
+}

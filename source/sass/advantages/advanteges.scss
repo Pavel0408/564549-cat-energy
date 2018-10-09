@@ -10,3 +10,25 @@
   margin-bottom: 27px;
   padding-left: 80px;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    padding: 0;
+    width: 250px;
+    margin-right: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item {
+    width: 245px;
+    outline: 1px solid green;
+    margin: 0;
+  }
+}

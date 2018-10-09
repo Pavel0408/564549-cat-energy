@@ -7,41 +7,15 @@
 
 .catalog-main__title {
   @include reset();
+  margin: 0 auto;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
 }
 
-.main-catatlog__list {
-  @include reset();
-  width: 100%;
-}
-
-.main-catatlog__slogan {
-  margin-top: 82px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-}
-
-.main-catatlog__more {
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #444444;
-}
-
-.main-catalog__button--more {
-  background-color: #f2f2f2;
-  color: #444444;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  margin-top: 22px;
-  margin-bottom: 24px;
+@media (min-width: $desktop-width) {
+  .catalog-main {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
