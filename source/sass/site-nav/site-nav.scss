@@ -9,22 +9,24 @@
 }
 
 .site-nav__item {
-  display: fex;
-  align-items: center;
-  justify-content: center;
   min-height: 65px;
-  text-align: center;
   outline: 1px solid yellow;
 }
 
 .site-nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: auto;
+  margin-top: 25px;
   font-family: $main-font;
   color: $font-color;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
   text-decoration: none;
+  vertical-align: middle;
+  outline: 1px solid fuchsia;
 }
 
 @media (min-width: $tablet-width) {
