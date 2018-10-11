@@ -1,7 +1,17 @@
 .social-list {
   @include reset();
-  padding-top: 24px;
-  padding-bottom: 22px;
+  padding-top: 45px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 145px;
+}
+
+.social-list__item {
+  min-width: 35px;
+  min-height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;

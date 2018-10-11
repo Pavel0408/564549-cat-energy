@@ -92,17 +92,44 @@
 
 .living-example__img {
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .living-example__slider-buttons {
+  display: flex;
+  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
+  min-width: 198px;
 }
 
 .living-example__desciption {
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
+}
+
+.living-example__button {
+  border: none;
+  background-color: transparent;
+}
+
+.living-example__switch {
+  width: 84px;
+  height: 14px;
+  border: 1px solid #cdcdcd;
+  background: #ffffff;
+  display: flex;
+  border-radius: 5px;
+}
+
+.living-example__img-switch {
+  width: 35px;
+  height: 6px;
+  margin: auto;
+  margin-left: 5px;
+  background: #68b738;
+  border-radius: 3px;
 }
 
 @media (min-width: $tablet-width) {

@@ -2,6 +2,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  padding-top: 10px;
 }
 
 .Academy__link {
@@ -12,10 +13,12 @@
   color: #444444;
   text-decoration: none;
   margin-right: auto;
+  margin-top: 10px;
 }
 
 .Academy__logo-block {
   margin-left: auto;
   display: flex;
   justify-content: flex-end;
+  margin-right: -5px;
 }
