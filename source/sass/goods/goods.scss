@@ -1,17 +1,16 @@
 .goods {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 25px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
   width: 100%;
 }
 
 .goods__img-block {
-  width: 50%;
+  width: 49%;
 }
 
 .goods__info-block {
-  width: 50%;
+  width: 51%;
 }
 
 *[class*="goods__title"] {
@@ -19,19 +18,39 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  width: 52%;
-  padding-bottom: 12px;
+  width: 53%;
+  padding-bottom: 11px;
+  text-transform: uppercase;
+}
+
+.goods__title--main {
+  padding-top: 22px;
+  padding-left: 3px;
+}
+
+.goods__title--additional {
+  padding-bottom: 8px;
 }
 
 .goods__table {
+  @include reset();
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 12px;
   color: #444444;
   width: 100%;
+  outline: 1px solid yellow;
+}
+
+.goods__data {
+  text-align: right;
+  padding-bottom: 1px;
 }
 
 .goods__button {
-  margin-top: 23px;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: -1px;
 }
 
 @media (min-width: $tablet-width) {

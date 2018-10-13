@@ -3,7 +3,8 @@
   color: $font-color;
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
+  padding-top: 25px;
+  padding-bottom: 35px;
 }
 
 .additional-catalog__title {
@@ -11,11 +12,29 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  margin-bottom: 48px;
 }
 
 .additional-catalog__list {
   @include reset();
   width: 100%;
+  padding-bottom: 27px;
+}
+
+.additional-catalog__item  {
+  padding-bottom: 31px;
+}
+
+.additional-catalog__info-block {
+  width: 100%;
+}
+
+.additional-catalog__table {
+  font-size: 14px;
+  line-height: 14px;
+  margin-left: -3px;
+  width: 100%;
+  margin-bottom: 13px;
 }
 
 .additional-catalog__slogan {
@@ -37,6 +56,18 @@
   width: 163px;
   margin-bottom: 42px;
   text-align: center;
+  position: relative;
+}
+
+.additional-catalog__text::before {
+  position: absolute;
+  content: "";
+  width: 54px;
+  height: 61px;
+  top: -122px;
+  left: 55px;
+  background-image: url("../../img/icon-gift-1.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
