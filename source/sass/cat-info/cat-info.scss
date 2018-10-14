@@ -1,3 +1,7 @@
+.cat-info {
+  @include reset();
+}
+
 .cat-info__wrapper {
   display: flex;
   width: 100%;
@@ -9,8 +13,9 @@
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 13px;
-  padding-bottom: 14px;
+  padding-bottom: 11px;
   width: 50%;
+  border: 1px solid #e6e6e6;
 }
 
 .cat-info__label {
@@ -21,6 +26,16 @@
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 15px;
+  text-transform: uppercase;
+}
+
+.cat-info__radio {
+  padding-top: 36px;
+}
+
+.cat-info__radio-wrapper {
+  @include reset();
+  margin-bottom: 25px;
 }
 
 .cat-info__radio-label {
@@ -28,13 +43,47 @@
   color: #222222;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 45px;
+  position: relative;
+}
+
+.cat-info__radio-label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 1px solid #e2e2e2;
+  border-radius: 50%;
+  left: 0;
+  top: -5px;
+}
+
+.cat-info__radio-label::after {
+  content: "";
+  display: none;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-color: #68b738;
+  border-radius: 50%;
+  left: 9px;
+  top: 5px;
+}
+
+input[type="radio"]:checked + .cat-info__radio-label::after {
+  display: block;
 }
 
 .cat-info__title {
+  @include reset();
   color: $font-color;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  padding-top: 30px;
+  margin-left: -2px;
+  padding-bottom: 19px;
 }
 
 @media (min-width: $desktop-width) {

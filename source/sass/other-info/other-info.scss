@@ -1,8 +1,19 @@
+.other-info {
+  @include reset();
+}
+
 .other-info__title {
+  @include reset();
   color: $font-color;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  padding-top: 27px;
+  padding-bottom: 23px;
+}
+
+.other-info__wrapper {
+  display: flex;
 }
 
 .other-info__label {
@@ -10,7 +21,29 @@
   color: #222222;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 45px;
+  padding-bottom: 8px;
+  position: relative;
 }
+
+.other-info__label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cfcfcf;
+  left: -0;
+  top: -5px;
+}
+
+input:checked + .other-info__label::before {
+  background-image: url("../img/icon-tick-1-.svg");
+  background-repeat: no-repeat;
+  background-position: 4px 5px;
+  background-size: 80%;
+}
+
 
 @media (min-width: $tablet-width) {
   .other-info__block {
