@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  position: relative;
 }
 
 .livin-example__info-wrapper {
@@ -133,10 +134,136 @@
 }
 
 @media (min-width: $tablet-width) {
+  .living-example {
+    padding-top: 25px;
+  }
+
+  .living-example::before {
+    content: "";
+    position: absolute;
+    width: 1600px;
+    height: 1px;
+    background-color: #e6e6e6;
+    top: 0;
+    left: -150px;
+  }
+
   .livin-example__info-wrapper {
+    padding-left: 29px;
     background-color: #ffffff;
     background-clip: border-box;
     border: 2px solid green;
+  }
+
+
+  .living-example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 64px;
+  }
+
+  .living-example__info {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 51px;
+  }
+
+  .living-example__table {
+    width: 366px;
+    margin-bottom: 250px;
+  }
+
+  .living-example__data {
+    width: 162px;
+    height: 72px;
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 18px;
+  }
+
+  .living-example__parameter {
+    width: 162px;
+  }
+
+  .living-example__mask {
+    width: 142px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
+
+  .living-example__result {
+    margin-right: 0;
+    width: 178px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: right;
+    padding-top: 10px;
+  }
+
+  .living-examle__img-wrapper {
+    padding-bottom: 75px;
+  }
+
+  .living-examle__img-1-wrapper {
+    width: 50%;
+    margin-top: -210px;
+    padding-left: 46px;
+    overflow: hidden;
+  }
+
+  .living-examle__img-2-wrapper {
+    width: 50%;
+    margin-top: -210px;
+    overflow: hidden;
+  }
+
+  .living-example__img2 {
+    margin-left: -339px;
+  }
+
+  .living-example__img {
+    width: 690px;
+    margin-bottom: 19px;
+  }
+
+  .living-example__slider-buttons {
+    min-width: 570px;
+  }
+
+  .living-example__switch {
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+    position: relative;
+  }
+
+  .living-example__img-switch {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    left: 194px;
+    top: -14px;
+    background-color: #ffffff;
+    border: 1px solid #cfcfcf;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .living-example__img-switch::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #68b738;
+    border-radius: 50%;
+    left: 11px;
+    top: 11px;
+  }
+
+  .living-example__desciption {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

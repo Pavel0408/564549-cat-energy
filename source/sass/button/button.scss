@@ -12,4 +12,14 @@
   text-transform: uppercase;
   background-origin: none;
   font-weight: 400;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
 }

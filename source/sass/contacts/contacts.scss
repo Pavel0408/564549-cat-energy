@@ -74,25 +74,51 @@
 @media (min-width: $tablet-width) {
   .contacts__map-wrapper {
     width: 100%;
-    padding-bottom: 396px;
-    background-image: url("../img/bg-map-tablet@1x.png");
-    background-position: bottom 0 left 0;
     background-clip: border-box;
     margin-top: 50px;
   }
 
+  .contacts__text {
+    padding-top: 63px;
+  }
+
   .contacts__slogan {
     padding-left: 70px;
-    width: 170px;
+    padding-top: 2px;
+    width: 250px;
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .contacts__address {
-    padding-right: 70px;
+    padding-right: 72px;
     width: 50%;
     text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contacts__address-city {
+    display: block;
+    padding-top: 20px;
   }
 
   .contacts__map {
-    display: none;
+    padding-top: 72px;
+  }
+
+  .contacts::before {
+    width: 90px;
+    height: 105px;
+    background-size: cover;
+    bottom: 150px;
+    left: 324px;
+    z-index: 5;
+  }
+
+  .contacts iframe {
+    height: 396px;
+    z-index: 10;
+    opacity: 1;
   }
 }

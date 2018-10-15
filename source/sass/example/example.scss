@@ -9,3 +9,14 @@
   line-height: 60px;
   font-weight: 400;
 }
+
+@media (min-width: $tablet-width) {
+  .example {
+    padding-top: 15px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

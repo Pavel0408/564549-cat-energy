@@ -34,8 +34,9 @@
 @media (min-width: $tablet-width) {
   .intro {
     align-items: flex-start;
-    padding-left: 90px;
-    background: url("../img/index-can-tablet@1x.jpg") 0 190px no-repeat;
+    padding-top: 44px;
+    padding-left: 116px;
+    background: url("../img/index-can-tablet@1x.jpg") 30px 244px no-repeat;
   }
 
   .intro__title {
@@ -43,19 +44,23 @@
     line-height: 60px;
     color: $font-color;
     width: 420px;
+    text-align: left;
+    margin-bottom: 40px;
   }
 
   .intro__slogan {
     font-size: 20px;
     line-height: 20px;
     color: $font-color;
-    margin-bottom: 49px;
+    padding-left: 2px;
+    margin-bottom: 48px;
   }
 
   .intro__button {
     margin: 0;
     margin-bottom: 529px;
-    width: 246px;
+    width: 245px;
+    margin-left: 2px;
   }
 }
 
