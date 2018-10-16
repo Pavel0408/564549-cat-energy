@@ -23,3 +23,25 @@
   color: #444444;
   padding-left: 61px;
 }
+
+@media (min-width: $tablet-width) {
+  .program-selection {
+    padding-bottom: 55px;
+  }
+
+  .program-selection__description {
+    font-size: 20px;
+    line-height: 30px;
+    width: 327px;
+    margin-left: 40px;
+    margin-top: 55px;
+    margin-bottom: 30px;
+  }
+
+  .program-selection__footnote {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 46px;
+    margin-bottom: auto;
+  }
+}
