@@ -16,3 +16,37 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (min-width: $tablet-width) {
+  .social-list__ikon {
+    fill: #6b6b6b;
+  }
+
+  .social-list__ikon--vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social-list__ikon--inst {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social-list__ikon--fb {
+    width: 14px;
+    height: 28px;
+  }
+
+  .social-list {
+    min-width: 170px;
+    justify-content: flex-start;
+    margin-left: 156px;
+    padding-top: 52px;
+  }
+
+  .social-list__item {
+    min-width: auto;
+    min-height: auto;
+    margin-right: 28px;
+  }
+}

@@ -3,6 +3,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding-top: 10px;
+  margin-left: auto;
 }
 
 .Academy__link {
@@ -21,4 +22,14 @@
   display: flex;
   justify-content: flex-end;
   margin-right: -5px;
+}
+
+@media (min-width: $tablet-width) {
+  .Academy__link {
+    margin-right: 14px;
+  }
+
+  .Academy {
+    padding-top: 30px;
+  }
 }
