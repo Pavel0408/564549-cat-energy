@@ -16,6 +16,20 @@
   font-weight: 400;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog-main {
+    padding: 0;
+  }
+
+  .catalog-main__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 43px;
+    padding-left: 30px;
+    padding-bottom: 93px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .catalog-main {
     padding-left: 70px;
