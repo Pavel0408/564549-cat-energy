@@ -9,10 +9,6 @@
   margin-bottom: 16px;
 }
 
-// .main-header__logo {
-//   min-height: 65px;
-// }
-
 @media (min-width: $tablet-width) {
   .main-header {
     display: flex;
@@ -37,7 +33,27 @@
 }
 
 @media (min-width: $desktop-width) {
-  .container {
-    width: $desktop-width;
+  .main-header {
+    padding-top: 30px;
+    position: relative;
+  }
+
+  .main-header::before {
+    content: "";
+    position: absolute;
+    width: 720px;
+    height: 696px;
+    right: 0;
+    top: -11px;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    z-index: -10;
+  }
+
+
+  .energy-logo__img {
+    width: 202px;
+    height: 60px;
+    outline: 1px solid blue;
   }
 }

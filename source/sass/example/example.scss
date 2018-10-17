@@ -20,3 +20,10 @@
     line-height: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .example {
+    padding-top: 44px;
+    padding-bottom: 250px;
+  }
+}

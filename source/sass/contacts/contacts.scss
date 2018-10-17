@@ -121,3 +121,39 @@
     z-index: 10;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts__map-wrapper {
+    margin-top: 0;
+  }
+
+  .contacts__map {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__text {
+    min-height: 201px;
+    width: 570px;
+    top: 95px;
+    left: 110px;
+    padding-left: 0;
+    padding-top: 62px;
+    padding-right: 0;
+  }
+
+  .contacts__slogan {
+    width: 270px;
+    padding-left: 75px;
+  }
+
+  .contacts__address {
+    text-align: left;
+    margin-left: 93px;
+  }
+
+  .contacts::before {
+    bottom: 147px;
+    left: 999px;
+  }
+}

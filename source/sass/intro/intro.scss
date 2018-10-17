@@ -65,9 +65,26 @@
 }
 
 @media (min-width: $desktop-width) {
+  .intro {
+    padding-top: 95px;
+    padding-left: 188px;
+    background: url("../../img/index-can-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 560px 14px;
+  }
+
+  .intro__title {
+    padding-left: 2px;
+    margin-bottom: 42px;
+  }
+
+  .intro__slogan {
+    margin-bottom: 52px;
+  }
+
   .intro__button {
     margin: 0;
-    margin-bottom: 269px;
+    margin-bottom: 271px;
     width: 246px;
   }
 }

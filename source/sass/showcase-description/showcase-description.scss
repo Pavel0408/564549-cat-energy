@@ -142,7 +142,43 @@
 @media (min-width: $desktop-width) {
   .showcase-description {
     align-items: flex-start;
-    padding-left: 52px;
+    padding-left: 37px;
     padding-right: 52px;
+    padding-top: 75px;
+  }
+
+  .showcase-description__title {
+    text-align: center;
+    width: 100%;
+    padding-left: 35px;
+    outline: 1px solid yellow;
+    margin-bottom: 73px;
+  }
+
+  .showcase-description__title--pro {
+    padding-left: 78px;
+  }
+
+  .showcase-description__title::before {
+    width: 134px;
+    height: 97px;
+    left: 29px;
+    top: -36px;
+  }
+
+  .showcase-description__title--pro::before {
+    left: -2px;
+    top: -9px;
+  }
+
+  .showcase-description__title::after {
+    width: 100px;
+    height: 100px;
+    left: 16px;
+    top: -30px;
+  }
+
+  .showcase-description__info {
+    margin-bottom: 31px;
   }
 }

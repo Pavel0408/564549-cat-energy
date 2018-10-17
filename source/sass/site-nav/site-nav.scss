@@ -46,3 +46,15 @@
     margin-top: 34px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-nav__item {
+    margin-left: 34px;
+  }
+
+  .site-nav__link {
+    font-size: 20px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+}
