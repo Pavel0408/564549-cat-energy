@@ -71,7 +71,7 @@
   top: 5px;
 }
 
-input[type="radio"]:checked+.cat-info__radio-label::after {
+input[type="radio"]:checked + .cat-info__radio-label::after {
   display: block;
 }
 
