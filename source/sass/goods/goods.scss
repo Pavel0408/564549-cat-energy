@@ -115,3 +115,13 @@
     padding-top: 13px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .goods__button {
+    width: 169px;
+  }
+
+  .goods__info-block {
+    padding-right: 38px;
+  }
+}

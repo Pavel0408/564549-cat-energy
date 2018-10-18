@@ -106,9 +106,24 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-catatlog__item {
+  .main-catalog__item {
     width: 245px;
     margin-left: 40px;
     margin-right: 40px;
+    margin-bottom: 74px;
+  }
+
+  .main-catatlog__slogan {
+    margin-top: 167px;
+  }
+
+  .main-catatlog__more {
+    width: 172px;
+    padding: 0;
+  }
+
+  .main-catalog__button--more {
+    width: 169px;
+    margin-bottom: 39px;
   }
 }
