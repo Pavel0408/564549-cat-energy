@@ -45,3 +45,19 @@
     margin-bottom: auto;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .program-selection {
+    padding-bottom: 64px;
+  }
+
+  .program-selection__description {
+    margin-left: 0;
+    margin-bottom: 28px;
+  }
+
+  .program-selection__footnote {
+    margin-top: 14px;
+    margin-left: 20px;
+  }
+}

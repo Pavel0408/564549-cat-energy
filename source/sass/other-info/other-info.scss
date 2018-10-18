@@ -79,8 +79,37 @@ input:checked+.other-info__label::before {
     top: -10px;
   }
 
-  input:checked + .other-info__label::before {
+  input:checked+.other-info__label::before {
     background-size: 60%;
     background-position: 8px 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .other-info__title {
+    margin-left: 0;
+    padding-top: 64px;
+  }
+
+  .other-info__block {
+    margin-left: 13px;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 110px;
+  }
+
+  .other-info__wrapper {
+    width: 300px;
+    margin-right: 25px;
+    margin-bottom: 0;
+  }
+
+  .other-info__label {
+    padding-bottom: 0;
+  }
+
+  .other-info__wrapper--last {
+    margin-right: 0;
+    width: 200px;
   }
 }

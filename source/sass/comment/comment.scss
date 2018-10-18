@@ -33,3 +33,14 @@
     margin-left: 40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .comment__title {
+    padding-left: 0;
+  }
+
+  .comment__area {
+    margin-left: 0;
+    width: 100%;
+  }
+}
