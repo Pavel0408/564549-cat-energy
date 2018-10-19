@@ -72,6 +72,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts--grey {
+    background: $grey-bg;
+  }
+
   .contacts__map-wrapper {
     width: 100%;
     background-clip: border-box;

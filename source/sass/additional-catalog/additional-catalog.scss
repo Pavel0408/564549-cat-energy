@@ -82,6 +82,20 @@
     line-height: 36px;
     padding-left: 37px;
     margin-bottom: 82px;
+    position: relative;
+    background-color: #ffffff;
+    width: 411px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 768px;
+      height: 3px;
+      background-color: #68b738;
+      left: -30px;
+      top: 23px;
+      z-index: -10;
+    }
   }
 
   .additional-catalog__list {
@@ -92,7 +106,6 @@
   .additional-catalog__info-block {
     display: flex;
     justify-content: space-between;
-    outline: 2px solid blue;
     width: 634px;
   }
 
@@ -105,7 +118,7 @@
   }
 
   .additional-catalog__table {
-    width: 230px;
+    width: 232px;
     margin-left: auto;
     padding-right: 20px;
     font-size: 16px;
@@ -114,6 +127,7 @@
 
   .additional-catalog__table td {
     padding-top: 4px;
+    border: none;
   }
 
   .additional-catalog__table .goods__characteristic {
@@ -161,6 +175,22 @@
     padding-bottom: 80px;
     width: 895px;
     border-bottom: 1px solid #cdcdcd;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 957px;
+      z-index: 0;
+      right: -430px;
+      top: 23px;
+      height: 3px;
+      background-color: #68b738;
+    }
+
+    &::before {
+      width: 68px;
+      left: -110px;
+    }
   }
 
   .additional-catalog__list {
@@ -186,7 +216,7 @@
   }
 
   .additional-catalog__table {
-    width: 342px;
+    width: 345px;
   }
 
   .additional-catalog__table .goods__characteristic {
@@ -215,7 +245,6 @@
     width: 245px;
     height: 289px;
     margin-left: auto;
-    outline: 1px solid red;
     margin-right: 35px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
