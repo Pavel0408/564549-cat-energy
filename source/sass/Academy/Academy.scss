@@ -15,6 +15,10 @@
   text-decoration: none;
   margin-right: auto;
   margin-top: 10px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .Academy__logo-block {
@@ -22,6 +26,18 @@
   display: flex;
   justify-content: flex-end;
   margin-right: -5px;
+}
+
+.Academy__img {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

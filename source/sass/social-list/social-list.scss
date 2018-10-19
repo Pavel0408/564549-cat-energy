@@ -20,6 +20,14 @@
 @media (min-width: $tablet-width) {
   .social-list__ikon {
     fill: #6b6b6b;
+
+    &:hover {
+      fill: #68b738;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .social-list__ikon--vk {
