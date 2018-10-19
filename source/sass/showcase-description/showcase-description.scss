@@ -3,9 +3,9 @@
   flex-direction: column;
   align-items: center;
   background-color: #f2f2f2;
-  padding-top: 32px;
+  padding-top: 31px;
   padding-left: 17px;
-  padding-right: 17px;
+  padding-right: 18px;
   padding-bottom: 19px;
   font-family: $main-font;
   color: $font-color;
@@ -19,7 +19,7 @@
   text-transform: uppercase;
   padding-left: 15px;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 29px;
 }
 
 .showcase-description__title::before {
@@ -67,7 +67,6 @@
   line-height: 18px;
   font-weight: 400;
   color: #444444;
-  outline: 1px solid green;
   padding-left: 4px;
   margin-bottom: 44px;
 }
@@ -80,6 +79,27 @@
   line-height: 16px;
   font-weight: 400;
   padding-left: 3px;
+  position: relative;
+
+  &:hover::before {
+    width: 33px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.showcase-description__link::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 11px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  left: 100px;
+  top: 1px;
 }
 
 @media (min-width: $tablet-width) {
@@ -137,6 +157,11 @@
     line-height: 20px;
     padding-left: 14px;
   }
+
+  .showcase-description__link::before {
+    left: 144px;
+    top: 5px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -151,7 +176,6 @@
     text-align: center;
     width: 100%;
     padding-left: 35px;
-    outline: 1px solid yellow;
     margin-bottom: 73px;
   }
 

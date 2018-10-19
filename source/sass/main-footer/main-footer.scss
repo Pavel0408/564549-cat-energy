@@ -1,17 +1,20 @@
 .main-footer {
   background-color: $grey-bg;
   padding-top: 35px;
-  padding-bottom: 22px;
+  padding-bottom: 33px;
   margin: 0 auto;
 }
 
 .main-footer__logo {
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .main-footer__social {
   display: flex;
   justify-content: center;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,11 +26,15 @@
   }
 
   .main-footer__logo {
-    padding-top: 30px;
+    padding-top: 55px;
   }
 
   .main-footer__logo-img {
     width: 129px;
     height: 25px;
+  }
+
+  .main-footer__social {
+    border: none;
   }
 }
