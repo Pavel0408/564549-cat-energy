@@ -10,6 +10,17 @@
   font-weight: 400;
   padding-top: 27px;
   padding-bottom: 23px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 136px;
+    height: 3px;
+    background-color: #68b738;
+    right: -155px;
+    top: 40px;
+  }
 }
 
 .other-info__wrapper {
@@ -37,7 +48,7 @@
   top: -5px;
 }
 
-input:checked + .other-info__label::before {
+input:checked+.other-info__label::before {
   background-image: url("../img/icon-tick-1-.svg");
   background-repeat: no-repeat;
   background-position: 4px 5px;
@@ -52,6 +63,22 @@ input:checked + .other-info__label::before {
     padding-top: 62px;
     margin-left: 39px;
     margin-bottom: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+      left: -70px;
+      top: 84px;
+    }
+
+    &::after {
+      width: 479px;
+      top: 84px;
+      right: -520px;
+    }
   }
 
   .other-info__block {
@@ -79,7 +106,7 @@ input:checked + .other-info__label::before {
     top: -10px;
   }
 
-  input:checked + .other-info__label::before {
+  input:checked+.other-info__label::before {
     background-size: 60%;
     background-position: 8px 9px;
   }
@@ -89,13 +116,29 @@ input:checked + .other-info__label::before {
   .other-info__title {
     margin-left: 0;
     padding-top: 64px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 3px;
+      background-color: #68b738;
+      left: -110px;
+      top: 85px;
+    }
+
+    &::after {
+      width: 1111px;
+      top: 85px;
+      right: -1150px;
+    }
   }
 
   .other-info__block {
     margin-left: 13px;
     align-items: flex-start;
     width: 100%;
-    min-height: 110px;
+    min-height: 108px;
   }
 
   .other-info__wrapper {

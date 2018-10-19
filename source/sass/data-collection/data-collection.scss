@@ -2,6 +2,33 @@
   padding-top: 23px;
 }
 
+.data-collection input::-webkit-input-placeholder {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.data-collection input::-moz-placeholder {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.data-collection input:-ms-input-placeholder {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #444444;
+}
+
 .data-collection__submit {
   font-family: $main-font;
   margin-top: 18px;
@@ -10,12 +37,40 @@
   font-size: 16px;
 }
 
+.data-collection input[type="text"]:active {
+  border: 2px solid #444444;
+}
+
+.data-collection input:invalid {
+  border: 2px solid #ff8282;
+}
+
+
 .data-collection fieldset {
   @include reset();
   border: none;
 }
 
 @media (min-width: $tablet-width) {
+  .data-collection input::-webkit-input-placeholder {
+    font-family: $main-font;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .data-collection input::-moz-placeholder {
+    font-family: $main-font;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  .data-collection input:-ms-input-placeholder {
+    font-family: $main-font;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .data-collection__submit {
     width: 283px;
     margin-left: 40px;

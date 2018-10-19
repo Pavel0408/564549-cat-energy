@@ -5,6 +5,7 @@
 .cat-info__wrapper {
   display: flex;
   width: 100%;
+  position: relative;
 }
 
 .cat-info__input {
@@ -12,10 +13,34 @@
   min-height: 43px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 13px;
-  padding-bottom: 11px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   width: 50%;
   border: 1px solid #e6e6e6;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $main-font;
+  font-weight: 400;
+}
+
+.cat-info__input--email {
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-size: 17px 13px;
+  background-position: top 12px right 15px;
+  padding-left: 12px;
+  padding-top: 7px;
+  padding-right: 36px;
+}
+
+.cat-info__input--phone {
+  background-image: url("../../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: top 11px right 11px;
+  padding-left: 12px;
+  padding-top: 7px;
+  padding-right: 36px;
 }
 
 .cat-info__label {
@@ -25,12 +50,34 @@
   line-height: 18px;
   margin-top: auto;
   margin-bottom: auto;
-  margin-right: 15px;
+  margin-right: 12px;
   text-transform: uppercase;
 }
 
 .cat-info__radio {
   padding-top: 36px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background: #ededed;
+    top: 8px;
+    left: -20px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background: #ededed;
+    bottom: -26px;
+    z-index: 10;
+    left: -20px;
+  }
 }
 
 .cat-info__radio-wrapper {
@@ -71,7 +118,7 @@
   top: 5px;
 }
 
-input[type="radio"]:checked + .cat-info__radio-label::after {
+input[type="radio"]:checked+.cat-info__radio-label::after {
   display: block;
 }
 
@@ -83,7 +130,18 @@ input[type="radio"]:checked + .cat-info__radio-label::after {
   font-weight: 400;
   padding-top: 30px;
   margin-left: -2px;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 99px;
+    height: 3px;
+    background-color: #68b738;
+    right: -20px;
+    top: 44px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -95,11 +153,27 @@ input[type="radio"]:checked + .cat-info__radio-label::after {
   .cat-info__wrapper {
     padding-left: 41px;
     padding-right: 37px;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
   }
 
   .cat-info__input {
     height: 48px;
+    padding: 0 22px;
+    padding-top: 2px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .cat-info__input--email {
+    padding-left: 25px;
+    background-position: top 16px right 16px;
+    padding-right: 45px;
+  }
+
+  .cat-info__input--phone {
+    padding-left: 20px;
+    background-position: top 14px right 15px;
+    padding-right: 45px;
   }
 
   .cat-info__radio {
@@ -109,6 +183,12 @@ input[type="radio"]:checked + .cat-info__radio-label::after {
     min-height: 194px;
     padding-left: 43px;
     padding-top: 32px;
+    outline: 1px solid #e6e6e6;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   .cat-info__radio-wrapper {
@@ -140,8 +220,25 @@ input[type="radio"]:checked + .cat-info__radio-label::after {
     padding-top: 43px;
     margin-left: 39px;
     margin-bottom: 43px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+      left: -70px;
+      top: 65px;
+    }
+
+    &::after {
+      width: 145px;
+      top: 65px;
+      right: -185px;
+    }
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .cat-info__cat-group {
@@ -159,6 +256,22 @@ input[type="radio"]:checked + .cat-info__radio-label::after {
     padding-right: 0;
     width: 570px;
     margin-bottom: 24px;
+  }
+
+  .cat-info__label {
+    margin-right: 16px;
+  }
+
+  .cat-info__input--email {
+    padding-left: 24px;
+    background-position: top 17px right 17px;
+    padding-right: 45px;
+  }
+
+  .cat-info__input--phone {
+    padding-left: 17px;
+    background-position: top 14px right 16px;
+    padding-right: 45px;
   }
 
   .cat-info__radio {
@@ -181,5 +294,22 @@ input[type="radio"]:checked + .cat-info__radio-label::after {
     margin-left: 0;
     padding-top: 48px;
     margin-bottom: 41px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 3px;
+      background-color: #68b738;
+      left: -110px;
+      top: 68px;
+    }
+
+    &::after {
+      width: 778px;
+      top: 68px;
+      right: -818px;
+    }
   }
+
 }

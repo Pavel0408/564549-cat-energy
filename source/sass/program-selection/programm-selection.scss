@@ -48,16 +48,38 @@
 
 @media (min-width: $tablet-width) {
   .program-selection {
-    padding-bottom: 64px;
+    padding-bottom: 54px;
   }
 
   .program-selection__description {
     margin-left: 0;
     margin-bottom: 28px;
+    padding-left: 40px;
+    width: 370px;
+  }
+
+  .program-selection__footnote {
+    margin-top: 45px;
+    margin-left: 10px;
+    padding-left: 50px;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "Arial", "Helvetica", sans-serif;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-selection {
+    padding-bottom: 64px;
+  }
+
+  .program-selection__description {
+    padding-left: 0;
+    margin-bottom: 28px;
   }
 
   .program-selection__footnote {
     margin-top: 14px;
-    margin-left: 20px;
+    margin-left: 29px;
   }
 }

@@ -21,6 +21,15 @@
   .form-main__title {
     font-size: 60px;
     line-height: 60px;
+    margin-top: 23px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-main__title {
+    font-size: 60px;
+    line-height: 60px;
     margin-top: 42px;
     padding-left: 110px;
   }
