@@ -6,7 +6,7 @@
 }
 
 .livin-example__info-wrapper {
-  padding-top: 22px;
+  padding-top: 25px;
   background-color: $grey-bg;
   background-clip: border-box;
   display: flex;
@@ -233,7 +233,7 @@
 
   .living-example__img {
     width: 690px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 
   .living-example__slider-buttons {
@@ -246,6 +246,7 @@
     height: 6px;
     background-color: #dcdcdc;
     position: relative;
+    margin-top: 24px;
   }
 
   .living-example__img-switch {
@@ -272,6 +273,7 @@
   }
 
   .living-example__desciption {
+    margin-top: 10px;
     font-size: 20px;
     border-bottom: 1px dotted #b8b8b8;
     line-height: 34px;
@@ -286,7 +288,13 @@
     margin-right: auto;
     background-color: $grey-bg;
     padding-top: 0;
+    background-image: linear-gradient(to right, #f2f2f2 80%, #eaeaea 80%);
   }
+
+  .living-example::before {
+    display: none;
+  }
+
 
   .livin-example__info-wrapper {
     width: 40%;
@@ -360,9 +368,14 @@
     margin-bottom: 28px;
   }
 
+  .living-example__switch {
+    margin-top: 16px;
+  }
+
   .living-example__desciption {
     border-bottom: 1px dotted #b8b8b8;
     line-height: 34px;
+    margin-top: 0px;
 
     &:hover {
       border-bottom: 1px solid #989898;

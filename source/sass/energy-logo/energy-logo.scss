@@ -14,10 +14,10 @@
   background-image: url("../img/icon-close.svg");
   width: 18px;
   height: 18px;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: 3px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 12px;
+  right: 20px;
 }
 
 @media (min-width: $tablet-width) {

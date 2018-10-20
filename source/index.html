@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <header class="main-header main-header--index container">
-    <div class="main-header__logo energy-logo">
+  <header class="main-header main-header--index  container">
+    <div class="main-header__logo energy-logo main-header__logo--closed-menu">
       <a>
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -19,12 +19,12 @@
           <img class="energy-logo__img" src="img/logo-mobile.svg" alt="Cat Energy" width="191" height="38">
         </picture>
       </a>
-      <button class="energy-logo__menu-close">
-        <span class="visually-hidden">Закрыть меню</span>
       </button>
+      <button class="energy-logo__menu-close menu-close__button-closed menu-close__button-nojs">
+        <span class="visually-hidden">Закрыть меню</span>
     </div>
-    <nav>
-      <ul class="main-header__nav site-nav">
+    <nav class="">
+      <ul class="main-header__nav site-nav menu-close__closed menu-close__menu-nojs">
         <li class="site-nav__item">
           <a class="site-nav__link site-nav__link--index site-nav__link--active site-nav__link--active--index">Главная</a>
         </li>
@@ -215,6 +215,7 @@
       </div>
     </section>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

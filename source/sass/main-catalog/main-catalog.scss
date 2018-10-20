@@ -3,8 +3,14 @@
   width: 100%;
 }
 
+.main-catalog__item {
+  padding-left: 20px;
+  padding-right: 15px;
+  border-bottom: 1px solid #ededed;
+}
+
 .main-catatlog__slogan {
-  margin-top: 80px;
+  margin-top: 78px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 8px;
@@ -70,6 +76,7 @@
     margin-top: 69px;
     margin-bottom: 69px;
     background-color: $grey-bg;
+    padding: 0;
   }
 
   .main-catalog__item--more {

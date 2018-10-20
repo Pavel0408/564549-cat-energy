@@ -33,7 +33,7 @@
   z-index: 15;
 }
 
-.contacts__text--grey {
+.contacts__text--greygrey {
   background-color: $grey-bg;
 }
 
@@ -129,6 +129,7 @@
 @media (min-width: $desktop-width) {
   .contacts__map-wrapper {
     margin-top: 0;
+    padding-top: 0;
   }
 
   .contacts__map {
@@ -144,6 +145,11 @@
     padding-left: 0;
     padding-top: 62px;
     padding-right: 0;
+    background-color: #ffffff;
+  }
+
+  .contacts__text--greygrey {
+    background-color: #ffffff;
   }
 
   .contacts__slogan {
@@ -160,4 +166,9 @@
     bottom: 147px;
     left: 999px;
   }
+
+  .contacts iframe {
+    height: 100%;
+  }
+
 }

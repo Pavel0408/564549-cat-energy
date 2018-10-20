@@ -3,6 +3,7 @@
   color: $font-color;
   font-size: 20px;
   line-height: 20px;
+  position: relative;
 }
 
 .main-header__logo {
@@ -15,6 +16,10 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.main-header__logo--closed-menu {
+  margin-bottom: 15px;
 }
 
 @media (min-width: $tablet-width) {
