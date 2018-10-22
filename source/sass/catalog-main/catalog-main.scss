@@ -9,7 +9,6 @@
 
 .catalog-main__title {
   @include reset();
-  margin: 0 auto;
   padding-top: 16px;
   padding-bottom: 27px;
   padding-left: 20px;
@@ -37,14 +36,13 @@
 
 @media (min-width: $desktop-width) {
   .catalog-main {
-    padding-left: 35px;
-    padding-right: 70px;
+
     padding-top: 10px;
   }
 
   .catalog-main__title {
-    padding-top: 50px;
-    padding-left: 75px;
+    padding-top: 52px;
+    padding-left: 110px;
     padding-bottom: 82px;
   }
 }

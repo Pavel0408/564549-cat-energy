@@ -1,5 +1,7 @@
 .data-collection {
   padding-top: 23px;
+  display: flex;
+  flex-direction: column;
 }
 
 .data-collection input::-webkit-input-placeholder {

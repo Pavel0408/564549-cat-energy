@@ -1,9 +1,11 @@
-$main-font: "Oswald", "arial", serif;
+$main-font: "Oswald",
+"arial",
+serif;
 $font-color: #111111;
 $green-bg: #65a93c;
 $grey-bg: #f2f2f2;
 $tablet-width: 768px;
-$desktop-width: 1440px;
+$desktop-width: 1300px;
 
 body {
   font-family: $main-font;
@@ -15,6 +17,10 @@ body {
   padding: 11px 0;
   padding-bottom: 0;
 }
+
+// * {
+//   outline: 1px solid red;
+// }
 
 a {
   font-family: $main-font;
@@ -77,3 +83,4 @@ html {
 @import "Academy/Academy.scss";
 @import "catalog-main/catalog-main.scss";
 @import "menu-close/menu-close.scss";
+@import "site-wrapper/site-wrapper.scss"

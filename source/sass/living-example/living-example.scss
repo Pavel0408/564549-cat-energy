@@ -146,11 +146,11 @@
   .living-example::before {
     content: "";
     position: absolute;
-    width: 1600px;
+    width: 760px;
     height: 1px;
     background-color: #e6e6e6;
     top: 0;
-    left: -150px;
+    left: 1px;
   }
 
   .livin-example__info-wrapper {
@@ -282,12 +282,10 @@
 
 @media (min-width: $desktop-width) {
   .living-example {
-    width: $desktop-width;
     flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
     background-color: $grey-bg;
     padding-top: 0;
+    width: auto;
     background-image: linear-gradient(to right, #f2f2f2 80%, #eaeaea 80%);
   }
 

@@ -1,0 +1,19 @@
+.site-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .site-wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-wrapper {
+    width: 1440px;
+  }
+}

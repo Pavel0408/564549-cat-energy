@@ -9,6 +9,28 @@
 
 .site-nav__item {
   min-height: 65px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background: #e6e6e6;
+    top: 0;
+    left: -20px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background: #e6e6e6;
+    bottom: 0;
+    z-index: 10;
+    left: -20px;
+  }
 }
 
 .site-nav__link {
@@ -44,6 +66,14 @@
     margin-left: 36px;
     justify-content: flex-start;
     min-height: auto;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .site-nav__link {

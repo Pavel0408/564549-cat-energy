@@ -1,6 +1,6 @@
 .social-list {
   @include reset();
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 18px;
   display: flex;
   flex-wrap: wrap;
@@ -62,5 +62,6 @@
 @media (min-width: $desktop-width) {
   .social-list {
     margin-left: 411px;
+    padding-top: 40px;
   }
 }

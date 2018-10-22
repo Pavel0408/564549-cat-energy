@@ -9,17 +9,19 @@
   line-height: 24px;
   font-weight: 400;
   padding-top: 27px;
+  padding-left: 20px;
   padding-bottom: 23px;
-  position: relative;
+  display: flex;
 
   &::after {
     content: "";
-    position: absolute;
-    width: 136px;
+    width: 5px;
     height: 3px;
     background-color: #68b738;
-    right: -155px;
-    top: 40px;
+    margin-left: 22px;
+    margin-top: 13px;
+    margin-bottom: auto;
+    flex-grow: 2;
   }
 }
 
@@ -58,40 +60,40 @@ input:checked+.other-info__label::before {
 
 @media (min-width: $tablet-width) {
   .other-info__title {
+    @include reset();
     font-size: 36px;
     line-height: 36px;
-    padding-top: 62px;
-    margin-left: 39px;
-    margin-bottom: 28px;
+    margin-top: 62px;
 
     &::before {
       content: "";
-      position: absolute;
       width: 30px;
       height: 3px;
       background-color: #68b738;
-      left: -70px;
-      top: 84px;
+      margin-right: 40px;
+      margin-top: 22px;
     }
 
     &::after {
-      width: 479px;
-      top: 84px;
-      right: -520px;
+      margin-top: 22px;
+      margin-left: 40px;
     }
   }
 
   .other-info__block {
     display: flex;
     flex-wrap: wrap;
-    width: 690px;
     min-height: 113px;
-    margin-left: 52px;
+    padding-left: 40px;
+    padding-right: 10px;
+    margin-top: 50px;
   }
 
   .other-info__wrapper {
-    width: 50%;
-    margin-bottom: 27px;
+    min-width: 35%;
+    margin-bottom: 28px;
+    margin-left: 42px;
+    margin-right: 51px;
   }
 
   .other-info__label {
@@ -114,45 +116,35 @@ input:checked+.other-info__label::before {
 
 @media (min-width: $desktop-width) {
   .other-info__title {
-    margin-left: 0;
-    padding-top: 64px;
+    margin-top: 65px;
 
     &::before {
-      content: "";
-      position: absolute;
       width: 70px;
-      height: 3px;
-      background-color: #68b738;
-      left: -110px;
-      top: 85px;
+      margin-top: 22px;
     }
 
     &::after {
-      width: 1111px;
-      top: 85px;
-      right: -1150px;
+      margin-top: 22px;
     }
   }
 
   .other-info__block {
-    margin-left: 13px;
+    margin-top: 51px;
+    padding-left: 80px;
+    padding-right: 10px;
     align-items: flex-start;
-    width: 100%;
     min-height: 108px;
+    width: auto;
   }
 
   .other-info__wrapper {
-    width: 300px;
-    margin-right: 25px;
     margin-bottom: 0;
+    min-width: 245px;
+    margin-right: 38px;
+    padding: 0;
   }
 
   .other-info__label {
     padding-bottom: 0;
-  }
-
-  .other-info__wrapper--last {
-    margin-right: 0;
-    width: 200px;
   }
 }
