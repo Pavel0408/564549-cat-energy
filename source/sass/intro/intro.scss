@@ -7,6 +7,12 @@
   background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 167px, center top;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
+    background-size: 280px, 320px;
+  }
 }
 
 .intro__title {
@@ -37,32 +43,38 @@
     padding-top: 44px;
     padding-left: 117px;
     background: url("../img/index-can-tablet@1x.jpg") 30px 244px no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+      background-size: 709px;
+    }
   }
 
-  .intro__title {
-    font-size: 60px;
-    line-height: 60px;
-    color: $font-color;
-    width: 420px;
-    text-align: left;
-    margin-bottom: 40px;
-  }
 
-  .intro__slogan {
-    font-size: 20px;
-    line-height: 20px;
-    color: $font-color;
-    padding-left: 2px;
-    margin-bottom: 48px;
-  }
+.intro__title {
+  font-size: 60px;
+  line-height: 60px;
+  color: $font-color;
+  width: 420px;
+  text-align: left;
+  margin-bottom: 40px;
+}
 
-  .intro__button {
-    margin: 0;
-    margin-bottom: 529px;
-    width: 245px;
-    margin-left: 2px;
-    padding-right: 3px;
-  }
+.intro__slogan {
+  font-size: 20px;
+  line-height: 20px;
+  color: $font-color;
+  padding-left: 2px;
+  margin-bottom: 48px;
+}
+
+.intro__button {
+  margin: 0;
+  margin-bottom: 529px;
+  width: 245px;
+  margin-left: 2px;
+  padding-right: 3px;
+}
 }
 
 @media (min-width: $desktop-width) {
@@ -72,6 +84,11 @@
     background: url("../img/index-can-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 560px 14px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-desktop@2x.png");
+      background-size: 552px;
+    }
   }
 
   .intro__title {

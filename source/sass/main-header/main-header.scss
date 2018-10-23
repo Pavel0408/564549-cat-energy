@@ -61,6 +61,11 @@
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     z-index: -10;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px;
+    }
   }
 
 
