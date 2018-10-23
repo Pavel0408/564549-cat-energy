@@ -1,14 +1,46 @@
 .advantages {
   @include reset();
+  padding-top: 28px;
+  padding-bottom: 23px;
 }
 
 .advantages__item {
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: #444444;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
   padding-left: 80px;
+  position: relative;
+}
+
+.advantages__item::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-color: #68b738;
+  left: 0;
+  top: -1px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item--1::before {
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.advantages__item--2::before {
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.advantages__item--3::before {
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.advantages__item--4::before {
+  background-image: url("../img/advantage-clock@1x.png");
 }
 
 @media (min-width: $tablet-width) {
@@ -16,19 +48,58 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 10px;
   }
 
   .advantages__item {
     padding: 0;
     width: 250px;
     margin-right: 75px;
+    margin-top: 157px;
+    margin-bottom: 87px;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+  }
+
+  .advantages__item::after {
+    content: "1";
+    position: absolute;
+    width: 114px;
+    height: 234px;
+    z-index: -10;
+    font-family: $main-font;
+    font-size: 281px;
+    line-height: 281px;
+    font-weight: 400;
+    top: -150px;
+    right: 20px;
+    color: #f2f2f2;
+  }
+
+  .advantages__item--2::after {
+    content: "2";
+  }
+
+  .advantages__item--3::after {
+    content: "3";
+  }
+
+  .advantages__item--4::after {
+    content: "4";
+  }
+
+  .advantages__item::before {
+    width: 80px;
+    height: 80px;
+    top: -112px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__item {
     width: 245px;
-    outline: 1px solid green;
     margin: 0;
+    margin-top: 155px;
   }
 }

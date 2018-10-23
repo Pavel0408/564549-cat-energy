@@ -1,8 +1,32 @@
+.other-info {
+  @include reset();
+}
+
 .other-info__title {
+  @include reset();
   color: $font-color;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  padding-top: 27px;
+  padding-left: 20px;
+  padding-bottom: 23px;
+  display: flex;
+
+  &::after {
+    content: "";
+    width: 5px;
+    height: 3px;
+    background-color: #68b738;
+    margin-left: 22px;
+    margin-top: 13px;
+    margin-bottom: auto;
+    flex-grow: 2;
+  }
+}
+
+.other-info__wrapper {
+  display: flex;
 }
 
 .other-info__label {
@@ -10,17 +34,117 @@
   color: #222222;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 45px;
+  padding-bottom: 8px;
+  position: relative;
 }
 
+.other-info__label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cfcfcf;
+  left: 0;
+  top: -5px;
+}
+
+input:checked+.other-info__label::before {
+  background-image: url("../img/icon-tick-1-.svg");
+  background-repeat: no-repeat;
+  background-position: 4px 5px;
+  background-size: 80%;
+}
+
+
 @media (min-width: $tablet-width) {
+  .other-info__title {
+    @include reset();
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 62px;
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+      margin-right: 40px;
+      margin-top: 22px;
+    }
+
+    &::after {
+      margin-top: 22px;
+      margin-left: 40px;
+    }
+  }
+
   .other-info__block {
     display: flex;
     flex-wrap: wrap;
-    outline: 1px solid blue;
+    min-height: 113px;
+    padding-left: 40px;
+    padding-right: 10px;
+    margin-top: 50px;
   }
 
   .other-info__wrapper {
-    width: 50%;
-    outline: 1px solid yellow;
+    min-width: 35%;
+    margin-bottom: 28px;
+    margin-left: 42px;
+    margin-right: 51px;
+  }
+
+  .other-info__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .other-info__label::before {
+    width: 40px;
+    height: 40px;
+    left: -11px;
+    top: -10px;
+  }
+
+  input:checked+.other-info__label::before {
+    background-size: 60%;
+    background-position: 8px 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .other-info__title {
+    margin-top: 65px;
+
+    &::before {
+      width: 70px;
+      margin-top: 22px;
+    }
+
+    &::after {
+      margin-top: 22px;
+    }
+  }
+
+  .other-info__block {
+    margin-top: 51px;
+    padding-left: 80px;
+    padding-right: 10px;
+    align-items: flex-start;
+    min-height: 108px;
+    width: auto;
+  }
+
+  .other-info__wrapper {
+    margin-bottom: 0;
+    min-width: 245px;
+    margin-right: 38px;
+    padding: 0;
+  }
+
+  .other-info__label {
+    padding-bottom: 0;
   }
 }

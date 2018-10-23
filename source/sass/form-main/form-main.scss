@@ -8,9 +8,44 @@
   @include reset();
   margin-left: auto;
   margin-right: auto;
+  margin-top: 7px;
+  margin-bottom: 34px;
+  padding-left: 20px;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
   font-weight: 400;
-  margin-bottom: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: #e6e6e6;
+    left: 0;
+    top: -27px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-main__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 23px;
+    padding-left: 30px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-main__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 42px;
+    padding-left: 110px;
+  }
 }

@@ -2,6 +2,8 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  padding-top: 21px;
+  margin-left: auto;
 }
 
 .Academy__link {
@@ -12,10 +14,38 @@
   color: #444444;
   text-decoration: none;
   margin-right: auto;
+  margin-top: 10px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .Academy__logo-block {
   margin-left: auto;
   display: flex;
   justify-content: flex-end;
+  margin-right: -5px;
+}
+
+.Academy__img {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .Academy__link {
+    margin-right: 14px;
+  }
+
+  .Academy {
+    padding-top: 28px;
+  }
 }

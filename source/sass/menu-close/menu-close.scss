@@ -1,0 +1,26 @@
+.menu-close__closed {
+  display: none;
+}
+
+.menu-close__button-nojs {
+  display: none;
+}
+
+.menu-close__menu-nojs {
+  display: flex;
+}
+
+.menu-close__button-closed {
+  background-image: url("../img/icon-mobile-menu.svg");
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  height: 18px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-close__closed {
+    display: flex;
+  }
+}

@@ -1,17 +1,20 @@
 .goods {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 25px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
   width: 100%;
 }
 
+.goods a {
+  text-decoration: none;
+}
+
 .goods__img-block {
-  width: 50%;
+  width: 48%;
 }
 
 .goods__info-block {
-  width: 50%;
+  width: 52%;
 }
 
 *[class*="goods__title"] {
@@ -19,28 +22,55 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  width: 52%;
-  padding-bottom: 12px;
+  width: 54%;
+  padding-bottom: 11px;
+  text-transform: uppercase;
+}
+
+.goods__title--main {
+  padding-top: 20px;
+  padding-left: 3px;
+}
+
+.goods__title--additional {
+  padding-bottom: 8px;
 }
 
 .goods__table {
+  @include reset();
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 12px;
   color: #444444;
   width: 100%;
+  margin-top: 2px;
+}
+
+.goods__data {
+  text-align: right;
+  padding-bottom: 1px;
 }
 
 .goods__button {
-  margin-top: 23px;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: -2px;
+  margin-right: 4px;
 }
 
 @media (min-width: $tablet-width) {
+  .goods {
+    padding-bottom: 0;
+  }
+
   .goods__img-block {
     width: 100%;
   }
 
   .goods__info-block {
     width: 100%;
+    padding-left: 37px;
+    padding-right: 36px;
   }
 
   *[class*="goods__title"] {
@@ -49,9 +79,54 @@
   }
 
   .goods__title--main {
-    width: 126px;
+    width: 136px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding-top: 0;
+    margin-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  .goods__title--additional {
+    min-width: 130px;
+  }
+
+  .goods__table {
+    font-size: 16px;
+    line-height: 16px;
+    border-collapse: collapse;
+  }
+
+  .goods__table td {
+    padding-bottom: 7px;
+    padding-top: 8px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .goods__img--small {
+    margin-top: -42px;
+  }
+
+  .goods__img--big {
+    margin-top: -80px;
+  }
+
+  .goods__button {
+    width: 249px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 36px;
+    padding-top: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods__button {
+    width: 169px;
+  }
+
+  .goods__info-block {
+    padding-right: 38px;
   }
 }

@@ -11,4 +11,24 @@
   padding-bottom: 11px;
   text-transform: uppercase;
   background-origin: none;
+  font-weight: 400;
+  border: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
 }
