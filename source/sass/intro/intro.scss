@@ -50,31 +50,30 @@
     }
   }
 
+  .intro__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: $font-color;
+    width: 420px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
 
-.intro__title {
-  font-size: 60px;
-  line-height: 60px;
-  color: $font-color;
-  width: 420px;
-  text-align: left;
-  margin-bottom: 40px;
-}
+  .intro__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: $font-color;
+    padding-left: 2px;
+    margin-bottom: 48px;
+  }
 
-.intro__slogan {
-  font-size: 20px;
-  line-height: 20px;
-  color: $font-color;
-  padding-left: 2px;
-  margin-bottom: 48px;
-}
-
-.intro__button {
-  margin: 0;
-  margin-bottom: 529px;
-  width: 245px;
-  margin-left: 2px;
-  padding-right: 3px;
-}
+  .intro__button {
+    margin: 0;
+    margin-bottom: 529px;
+    width: 245px;
+    margin-left: 2px;
+    padding-right: 3px;
+  }
 }
 
 @media (min-width: $desktop-width) {
