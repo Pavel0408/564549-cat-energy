@@ -57,6 +57,10 @@
   font-weight: 400;
 }
 
+.contacts__map-wrapper {
+  width: 100%;
+}
+
 .contacts__map {
   width: 100%;
   margin-top: 75px;
@@ -70,6 +74,7 @@
   bottom: 0;
   border: none;
 }
+
 
 @media (min-width: $tablet-width) {
   .contacts--grey {
@@ -170,5 +175,4 @@
   .contacts iframe {
     height: 100%;
   }
-
 }
