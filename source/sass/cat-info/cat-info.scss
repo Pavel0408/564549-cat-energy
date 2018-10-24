@@ -41,6 +41,14 @@
   margin-right: 10px;
 }
 
+.cat-info__input--email:focus {
+  background-image: url("../img/icon-mail-green.svg");
+}
+
+.cat-info__input--email:invalid {
+  background-image: url("../img/icon-mail-red.svg");
+}
+
 .cat-info__input--phone {
   background-image: url("../../img/icon-phone.svg");
   background-repeat: no-repeat;
@@ -52,11 +60,19 @@
   margin-right: 10px;
 }
 
+.cat-info__input--phone:focus {
+  background-image: url("../../img/icon-phone-green.svg");
+}
+
+.cat-info__input--phone:invalid {
+  background-image: url("../../img/icon-phone-red.svg");
+}
+
 .cat-info__label {
   font-family: $main-font;
   color: #222222;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 45px;
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 11px;
@@ -171,7 +187,7 @@ input[type="radio"]:checked+.cat-info__radio-label::after {
 
   .cat-info__label {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 50px;
     margin-right: 15px;
   }
 

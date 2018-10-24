@@ -40,6 +40,10 @@
   color: #444444;
 }
 
+.data-collection input:disabled+label {
+  opacity: 0.3;
+}
+
 .data-collection__submit {
   font-family: $main-font;
   margin-top: 18px;
@@ -48,7 +52,7 @@
   font-size: 16px;
 }
 
-.data-collection input[type="text"]:active {
+.data-collection input[type="text"]:focus {
   border: 2px solid #444444;
 }
 
