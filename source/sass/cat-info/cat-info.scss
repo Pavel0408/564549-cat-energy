@@ -41,7 +41,8 @@
   margin-right: 10px;
 }
 
-.cat-info__input--email:focus {
+.cat-info__input--email:focus,
+.cat-info__input--email:valid {
   background-image: url("../img/icon-mail-green.svg");
 }
 
@@ -60,7 +61,8 @@
   margin-right: 10px;
 }
 
-.cat-info__input--phone:focus {
+.cat-info__input--phone:focus,
+.cat-info__input--phone:valid {
   background-image: url("../../img/icon-phone-green.svg");
 }
 
