@@ -280,6 +280,16 @@
     border-radius: 50%;
     left: 11px;
     top: 11px;
+
+    &:focus,
+    &:active {
+      border: 2px solid #68b738;
+    }
+
+    &:hover {
+      border: 1px solid #bababa;
+    }
+  }
   }
 
   .living-example__description {
