@@ -266,8 +266,9 @@
     left: 194px;
     top: -14px;
     background-color: #ffffff;
-    border: 1px solid #cfcfcf;
+    border: 1px solid #cdcdcd;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
   }
 
   .living-example__img-switch::before {
@@ -394,8 +395,13 @@
   }
 
   .living-example__img-switch {
+    &:focus,
     &:active {
       border: 2px solid #68b738;
+    }
+
+    &:hover {
+      border: 1px solid #bababa;
     }
   }
 }

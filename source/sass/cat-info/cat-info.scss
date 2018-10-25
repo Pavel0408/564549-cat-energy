@@ -136,10 +136,14 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #cdcdcd;
   border-radius: 50%;
   left: 0;
   top: -5px;
+}
+
+.cat-info label:hover::before {
+  border: 1px solid #bababa;
 }
 
 .cat-info__radio-label::after {
