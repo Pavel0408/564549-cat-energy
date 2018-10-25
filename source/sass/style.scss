@@ -20,10 +20,6 @@ body {
   padding-bottom: 0;
 }
 
-// * {
-//   outline: 1px solid red;
-// }
-
 a {
   font-family: $main-font;
   color: $font-color;
@@ -82,7 +78,7 @@ html {
 @import "contacts/contacts.scss";
 @import "main-footer/main-footer.scss";
 @import "social-list/social-list.scss";
-@import "Academy/Academy.scss";
+@import "Academy/academy.scss";
 @import "catalog-main/catalog-main.scss";
 @import "menu-close/menu-close.scss";
 @import "site-wrapper/site-wrapper.scss"

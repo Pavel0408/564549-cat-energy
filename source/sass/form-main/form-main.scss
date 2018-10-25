@@ -16,6 +16,7 @@
   text-align: left;
   font-weight: 400;
   position: relative;
+  display: flex;
 
   &::before {
     content: "";
@@ -25,6 +26,10 @@
     background-color: #e6e6e6;
     left: 0;
     top: -27px;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      top: -8px;
+    }
   }
 }
 
