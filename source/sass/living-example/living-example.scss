@@ -5,7 +5,7 @@
   position: relative;
 }
 
-.livin-example__info-wrapper {
+.living-example__info-wrapper {
   padding-top: 25px;
   background-color: $grey-bg;
   background-clip: border-box;
@@ -13,7 +13,7 @@
   flex-wrap: wrap;
 }
 
-.living-examle__img-wrapper {
+.living-example__img-wrapper {
   background-color: $grey-bg;
   background-clip: border-box;
   display: flex;
@@ -43,14 +43,22 @@
 }
 
 .living-example__table {
-  width: 100%;
-  margin-bottom: 20px;
+  width: 280px;
+  margin-bottom: 21px;
   text-align: center;
 }
 
-.living-example__table tr {
+.living-example__tr {
   display: flex;
   justify-content: space-between;
+}
+
+.living-example__data--1 {
+  margin-right: 32px;
+}
+
+.living-example__data--2 {
+  margin-left: auto;
 }
 
 .living-example__data {
@@ -72,7 +80,7 @@
   padding: 0;
   width: 122px;
   display: flex;
-  margin-top: -9px;
+  margin-top: -6px;
 }
 
 .living-example__mask {
@@ -96,7 +104,7 @@
   margin-bottom: 30px;
 }
 
-.living-examle__img-2-wrapper {
+.living-example__img-2-wrapper {
   display: none;
 }
 
@@ -109,7 +117,7 @@
   padding-left: 4px;
 }
 
-.living-example__desciption {
+.living-example__description {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -153,7 +161,7 @@
     left: 1px;
   }
 
-  .livin-example__info-wrapper {
+  .living-example__info-wrapper {
     padding-left: 28px;
     padding-top: 24px;
     background-color: #ffffff;
@@ -171,7 +179,7 @@
   .living-example__info {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 51px;
+    margin-bottom: 54px;
     padding-left: 2px;
   }
 
@@ -190,6 +198,7 @@
 
   .living-example__parameter {
     width: 162px;
+    margin-top: -9px;
   }
 
   .living-example__mask {
@@ -208,19 +217,19 @@
     padding-top: 10px;
   }
 
-  .living-examle__img-wrapper {
+  .living-example__img-wrapper {
     padding-bottom: 68px;
     background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
   }
 
-  .living-examle__img-1-wrapper {
+  .living-example__img-1-wrapper {
     width: 50%;
     margin-top: -208px;
     padding-left: 46px;
     overflow: hidden;
   }
 
-  .living-examle__img-2-wrapper {
+  .living-example__img-2-wrapper {
     width: 50%;
     margin-top: -208px;
     overflow: hidden;
@@ -257,8 +266,9 @@
     left: 194px;
     top: -14px;
     background-color: #ffffff;
-    border: 1px solid #cfcfcf;
+    border: 1px solid #cdcdcd;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
   }
 
   .living-example__img-switch::before {
@@ -272,11 +282,27 @@
     top: 11px;
   }
 
-  .living-example__desciption {
+  .living-example__img-switch:hover {
+    border: 1px solid rgb(205, 205, 205);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .living-example__img-switch:active {
+    border: 2px solid rgb(104, 183, 56);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .living-example__img-switch:active::before {
+    left: 10px;
+    top: 10px;
+  }
+
+  .living-example__description {
     margin-top: 10px;
     font-size: 20px;
     border-bottom: 1px dotted #b8b8b8;
     line-height: 34px;
+    cursor: pointer;
   }
 }
 
@@ -293,8 +319,7 @@
     display: none;
   }
 
-
-  .livin-example__info-wrapper {
+  .living-example__info-wrapper {
     width: 40%;
     background-color: $grey-bg;
     padding-left: 70px;
@@ -335,19 +360,19 @@
     margin-left: 0;
   }
 
-  .living-examle__img-wrapper {
+  .living-example__img-wrapper {
     width: 50%;
     background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
     padding-bottom: 68px;
   }
 
-  .living-examle__img-1-wrapper {
+  .living-example__img-1-wrapper {
     margin-top: -224px;
     padding-left: 0;
     width: 50%;
   }
 
-  .living-examle__img-2-wrapper {
+  .living-example__img-2-wrapper {
     margin-top: -224px;
     width: 50%;
   }
@@ -370,10 +395,10 @@
     margin-top: 16px;
   }
 
-  .living-example__desciption {
+  .living-example__description {
     border-bottom: 1px dotted #b8b8b8;
     line-height: 34px;
-    margin-top: 0px;
+    margin-top: 0;
 
     &:hover {
       border-bottom: 1px solid #989898;
@@ -381,12 +406,6 @@
 
     &:active {
       border: none;
-    }
-  }
-
-  .living-example__img-switch {
-    &:active {
-      border: 2px solid #68b738;
     }
   }
 }

@@ -17,5 +17,3 @@ if (button.classList.contains('menu-close__button-closed')) {
   logo.classList.add('energy-logo');
 }
 });
-
-

@@ -11,8 +11,7 @@
 
 .main-catatlog__slogan {
   margin-top: 78px;
-  margin-left: auto;
-  margin-right: 43px;
+  margin-left: 40px;
   margin-bottom: 8px;
   font-size: 16px;
   line-height: 20px;
@@ -27,18 +26,17 @@
   height: 30px;
   background-image: url("../img/icon-plus.svg");
   position: absolute;
-  left: 43%;
+  left: 41%;
   top: -53px;
 }
 
 .main-catatlog__more {
   font-family: "Arial", "Helvetica", sans-serif;
-  margin-left: auto;
-  margin-right: 35px;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
   color: #444444;
+  margin-left: 30px;
 }
 
 .main-catalog__button--more {
@@ -109,7 +107,7 @@
     padding-left: 77px;
     padding-right: 77px;
     margin: auto;
-    margin-top: -16px;
+    margin-top: 27px;
     padding-top: 0;
   }
 
@@ -117,7 +115,7 @@
     width: 249px;
     height: 40px;
     margin: auto;
-    margin-bottom: 36px;
+    margin-top: 46px;
     padding-top: 13px;
   }
 }
@@ -134,17 +132,33 @@
     margin-bottom: 74px;
   }
 
-  .main-catatlog__slogan {
+  .main-catalog__item--more {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .main-catalog__more-wraper {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 167px;
+  }
+
+  .main-catatlog__slogan {
+    margin-top: 0;
   }
 
   .main-catatlog__more {
     width: 172px;
     padding: 0;
+    margin-top: 25px;
+    margin-bottom: auto;
   }
 
   .main-catalog__button--more {
     width: 169px;
-    margin-bottom: 39px;
+    margin: auto;
+    margin-top: 84px;
   }
 }

@@ -18,7 +18,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .social-list__ikon {
+  .social-list__icon {
     fill: #6b6b6b;
 
     &:hover {
@@ -30,17 +30,17 @@
     }
   }
 
-  .social-list__ikon--vk {
+  .social-list__icon--vk {
     width: 30px;
     height: 16px;
   }
 
-  .social-list__ikon--inst {
+  .social-list__icon--inst {
     width: 23px;
     height: 23px;
   }
 
-  .social-list__ikon--fb {
+  .social-list__icon--fb {
     width: 14px;
     height: 28px;
   }

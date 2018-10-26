@@ -4,13 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #65a93c 40%, #ffffff 40%);
   background-repeat: no-repeat;
-  background-position: center 167px, center top;
+  background-position: center 167px, center top, top;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
-    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
+    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg"), linear-gradient(to bottom, #65a93c 40%, #ffffff 40%);
     background-size: 280px, 320px;
   }
 }

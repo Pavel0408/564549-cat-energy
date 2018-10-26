@@ -63,10 +63,12 @@
 }
 
 .additional-catalog__slogan {
+  position: relative;
   width: 100%;
   min-height: 289px;
   display: flex;
   justify-content: center;
+  background-color: #75b94c;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
 
@@ -84,10 +86,10 @@
   color: #ffffff;
   margin-top: auto;
   width: 163px;
-  margin-bottom: 42px;
+  bottom: 42px;
   text-align: center;
-  position: relative;
-  margin-right: 8px;
+  position: absolute;
+  right: 68px;
 }
 
 .additional-catalog__text::before {
@@ -185,10 +187,8 @@
   }
 
   .additional-catalog__text {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: 122px;
+    bottom: 68px;
+    right: 122px;
     text-align: left;
   }
 
@@ -293,7 +293,8 @@
   .additional-catalog__text {
     margin: auto;
     text-align: center;
-    margin-bottom: 42px;
+    bottom: 42px;
+    right: 41px;
   }
 
   .additional-catalog__text::before {
