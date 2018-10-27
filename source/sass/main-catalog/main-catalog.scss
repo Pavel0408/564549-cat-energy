@@ -1,4 +1,4 @@
-.main-catatlog__list {
+.main-catalog__list {
   @include reset();
   width: 100%;
 }
@@ -9,7 +9,7 @@
   border-bottom: 1px solid #ededed;
 }
 
-.main-catatlog__slogan {
+.main-catalog__slogan {
   margin-top: 78px;
   margin-left: 40px;
   margin-bottom: 8px;
@@ -20,7 +20,7 @@
   position: relative;
 }
 
-.main-catatlog__slogan::before {
+.main-catalog__slogan::before {
   content: "";
   width: 30px;
   height: 30px;
@@ -30,7 +30,7 @@
   top: -53px;
 }
 
-.main-catatlog__more {
+.main-catalog__more {
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 16px;
@@ -39,7 +39,7 @@
   margin-left: 30px;
 }
 
-.main-catalog__button--more {
+.main-catalog__button-more {
   background-color: #f2f2f2;
   color: #444444;
   font-size: 16px;
@@ -58,7 +58,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-catatlog__list {
+  .main-catalog__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -82,7 +82,7 @@
     outline: 1px solid #e6e6e6;
   }
 
-  .main-catatlog__slogan {
+  .main-catalog__slogan {
     font-size: 20px;
     line-height: 20px;
     width: 135px;
@@ -93,14 +93,14 @@
     padding-bottom: 0;
   }
 
-  .main-catatlog__slogan::before {
+  .main-catalog__slogan::before {
     width: 60px;
     height: 60px;
     top: -110px;
     left: 39px;
   }
 
-  .main-catatlog__more {
+  .main-catalog__more {
     font-size: 16px;
     line-height: 18px;
     text-align: center;
@@ -111,7 +111,7 @@
     padding-top: 0;
   }
 
-  .main-catalog__button--more {
+  .main-catalog__button-more {
     width: 249px;
     height: 40px;
     margin: auto;
@@ -121,7 +121,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-catatlog__list {
+  .main-catalog__list {
     padding-left: 70px;
   }
 
@@ -145,18 +145,18 @@
     margin-top: 167px;
   }
 
-  .main-catatlog__slogan {
+  .main-catalog__slogan {
     margin-top: 0;
   }
 
-  .main-catatlog__more {
+  .main-catalog__more {
     width: 172px;
     padding: 0;
     margin-top: 25px;
     margin-bottom: auto;
   }
 
-  .main-catalog__button--more {
+  .main-catalog__button-more {
     width: 169px;
     margin: auto;
     margin-top: 84px;
