@@ -184,11 +184,11 @@
   top: 5px;
 }
 
-input[type="radio"]:checked+.cat-info__radio-label::after {
+input[type="radio"]:checked + .cat-info__radio-label::after {
   display: block;
 }
 
-.cat-info input[type="radio"]:focus+label::before {
+.cat-info input[type="radio"]:focus + label::before {
   outline: 1px dotted #444444;
   outline-offset: 2px;
 }
@@ -410,6 +410,10 @@ input[type="radio"]:checked+.cat-info__radio-label::after {
     background-position: top 14px right 17px;
     padding-right: 45px;
     width: 472px;
+
+    &:hover {
+      padding-left: 17px;
+    }
   }
 
   .cat-info__radio {
