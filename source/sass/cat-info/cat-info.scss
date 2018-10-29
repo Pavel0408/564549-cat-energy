@@ -28,6 +28,22 @@
   line-height: 16px;
   font-family: $main-font;
   font-weight: 400;
+
+  &:hover,
+  &:focus {
+    padding-left: 16px;
+    padding-top: 6px;
+  }
+}
+
+.cat-info__input--age:hover,
+.cat-info__input--age:focus {
+  padding-left: 15px;
+}
+
+.cat-info__input--weight:hover,
+.cat-info__input--weight:focus {
+  padding-top: 8px;
 }
 
 .cat-info__input--email {
@@ -39,11 +55,16 @@
   padding-top: 7px;
   padding-right: 36px;
   margin-right: 10px;
+
+  &:hover {
+    padding-left: 12px;
+  }
 }
 
 .cat-info__input--email:focus,
 .cat-info__input--email:valid {
   background-image: url("../img/icon-mail-green.svg");
+  padding-left: 12px;
 }
 
 .cat-info__input--email:invalid {
@@ -51,7 +72,7 @@
 }
 
 .cat-info__input--phone {
-  background-image: url("../../img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-size: 20px 20px;
   background-position: top 11px right 12px;
@@ -59,15 +80,20 @@
   padding-top: 7px;
   padding-right: 36px;
   margin-right: 10px;
+
+  &:hover {
+    padding-left: 12px;
+    padding-top: 8px;
+  }
 }
 
 .cat-info__input--phone:focus,
 .cat-info__input--phone:valid {
-  background-image: url("../../img/icon-phone-green.svg");
+  background-image: url("../img/icon-phone-green.svg");
 }
 
 .cat-info__input--phone:invalid {
-  background-image: url("../../img/icon-phone-red.svg");
+  background-image: url("../img/icon-phone-red.svg");
 }
 
 .cat-info__label {
@@ -162,6 +188,11 @@ input[type="radio"]:checked + .cat-info__radio-label::after {
   display: block;
 }
 
+.cat-info input[type="radio"]:focus + label::before {
+  outline: 1px dotted #444444;
+  outline-offset: 2px;
+}
+
 .cat-info__title {
   @include reset();
   padding: 0;
@@ -172,7 +203,7 @@ input[type="radio"]:checked + .cat-info__radio-label::after {
   display: flex;
   padding-top: 30px;
   padding-left: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
   &::after {
     content: "";
@@ -222,6 +253,17 @@ input[type="radio"]:checked + .cat-info__radio-label::after {
     padding-top: 2px;
     font-size: 20px;
     line-height: 20px;
+
+    &:hover,
+    &:focus {
+      padding-left: 20px;
+      padding-top: 1px;
+    }
+  }
+
+  .cat-info__input--age:hover,
+  .cat-info__input--ag:focus {
+    padding-left: 19px;
   }
 
   .cat-info__input--email {
@@ -230,6 +272,10 @@ input[type="radio"]:checked + .cat-info__radio-label::after {
     background-position: top 16px right 17px;
     padding-right: 45px;
     margin-right: 19px;
+
+    &:hover {
+      padding-top: 0;
+    }
   }
 
   .cat-info__input--phone {
@@ -238,6 +284,12 @@ input[type="radio"]:checked + .cat-info__radio-label::after {
     background-position: top 14px right 15px;
     padding-right: 45px;
     margin-right: 19px;
+
+    &:hover,
+    &:focus {
+      padding-left: 18px;
+      padding-top: 0;
+    }
   }
 
   .cat-info__radio {
@@ -347,6 +399,10 @@ input[type="radio"]:checked + .cat-info__radio-label::after {
     padding-right: 45px;
     margin-right: 0;
     width: 485px;
+
+    &:hover {
+      padding-left: 17px;
+    }
   }
 
   .cat-info__input--phone {
@@ -354,6 +410,10 @@ input[type="radio"]:checked + .cat-info__radio-label::after {
     background-position: top 14px right 17px;
     padding-right: 45px;
     width: 472px;
+
+    &:hover {
+      padding-left: 17px;
+    }
   }
 
   .cat-info__radio {

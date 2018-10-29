@@ -61,6 +61,11 @@ input:checked + .other-info__label::before {
   background-size: 80%;
 }
 
+.other-info input[type="checkbox"]:focus + label::before {
+  outline: 1px dotted #444444;
+  outline-offset: 3px;
+}
+
 
 @media (min-width: $tablet-width) {
   .other-info__title {

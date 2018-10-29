@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/picturefill.min.js"></script>
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
   <link href="css/style.min.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -15,7 +17,7 @@
   </div>
   <header class="main-header container">
     <div class="main-header__logo energy-logo">
-      <a>
+      <a href="index.html">
         <picture>
           <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -55,11 +57,12 @@
               </p>
               <p class="cat-info__wrapper">
                 <label class="cat-info__label cat-info__label--weight" for="Cat-weight">Вес (кг):*</label>
-                <input class="cat-info__input" type="text" name="Cat-weight" id="Cat-weight" placeholder="7" required>
+                <input class="cat-info__input cat-info__input--weight" type="text" name="Cat-weight" id="Cat-weight"
+                  placeholder="7" required>
               </p>
               <p class="cat-info__wrapper">
                 <label class="cat-info__label cat-info__label--age" for="Cat-age">Возраст (лет):</label>
-                <input class="cat-info__input" type="text" name="Cat-age" id="Cat-age" placeholder="7">
+                <input class="cat-info__input cat-info__input--age" type="text" name="Cat-age" id="Cat-age" placeholder="7">
               </p>
             </div>
             <div class="cat-info__radio">
@@ -147,7 +150,7 @@
     </section>
   </main>
   <footer class="main-footer container">
-    <div class="main-footer__logo energy-logo">
+    <div class="main-footer__logo main-footer__logo--form energy-logo">
       <a href="index.html">
         <img class="main-footer__logo-img" src="img/logo-footer.svg" alt="Cat Energy" width="130" height="27">
       </a>
@@ -194,7 +197,6 @@
     </section>
   </footer>
   <script src="js/script.js"></script>
-  <script src="js/picturefill.min.js"></script>
 </body>
 
 </html>

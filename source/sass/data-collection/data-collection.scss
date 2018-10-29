@@ -20,6 +20,11 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #444444;
+  vertical-align: middle;
+
+  &:hover {
+    padding-top: 50px;
+  }
 }
 
 .data-collection input::-moz-placeholder {
@@ -29,6 +34,11 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #444444;
+  vertical-align: middle;
+
+  &:hover {
+    padding-top: 50px;
+  }
 }
 
 .data-collection input:-ms-input-placeholder {
