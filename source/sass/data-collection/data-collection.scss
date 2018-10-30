@@ -65,15 +65,20 @@
 .data-collection input[type="text"]:focus,
 .data-collection input[type="email"]:focus,
 .data-collection input[type="tel"]:focus {
-  border: 2px solid #444444;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 2px  #444444;
 }
 
-.data-collection input[type="text"]:hover {
-  border: 1px solid #cdcdcd;
+.data-collection input[type="text"]:hover,
+.data-collection input[type="email"]:hover,
+.data-collection input[type="tel"]:hover {
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #cdcdcd;
 }
 
 .data-collection input:invalid {
-  border: 2px solid #ff8282;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 2px #ff8282;
 }
 
 
